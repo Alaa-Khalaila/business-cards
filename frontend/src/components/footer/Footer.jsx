@@ -54,15 +54,15 @@ export const Footer = () => {
           <div>
             <h4>Links</h4>
             <div className={style.footer_link}>
-              <a href="">Home</a>
+              <a href="#">Home</a>
               <a href="">Term and Conditions</a>
-              <a href="">About</a>
+              <a href="#about">About</a>
             </div>
           </div>
         </div>
         <div className={style.footer_copyright}>
-          <p> &copy; All Rights Reserved By</p>
-          <p> &copy; Distributed By</p>
+          <p> &copy; All Rights Reserved By Alaa Khalila</p>
+          <p> &copy; Distributed By Alaa Khalila</p>
         </div>
         </div>
         
