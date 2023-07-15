@@ -1,0 +1,56 @@
+.footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.footer_menu {
+  display: flex;
+  justify-content: space-around;
+}
+.contact_details {
+  display: flex;
+  flex-direction: column;
+}
+.contact_details a {
+  padding: 5px;
+  margin: 5px;
+  font-size: 17px;
+}
+.contact_details a:hover {
+  color: var(--secondary);
+}
+.contact_details a span {
+  padding: 5px;
+  margin: 5px;
+}
+.social_icon a {
+  margin-left: 15px;
+  font-size: 30px;
+}
+
+.social_icon a:hover {
+  color: var(--secondary);
+}
+h4 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+}
+p {
+  font-size: 17px;
+}
+.footer_link {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+}
+.footer_link a {
+  margin: 7px;
+}
+.footer_link a:hover {
+  color: var(--secondary);
+}
+.footer_copyright{
+  margin: 30px;
+}
