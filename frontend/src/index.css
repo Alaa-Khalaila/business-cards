@@ -1,5 +1,12 @@
-:root{
+:root {
   --primary: #222831;
   --secondary: #ffbe33;
-  --header:#0c0c0c;
+  --header: #0c0c0c;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
