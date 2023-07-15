@@ -9,7 +9,7 @@ function About() {
             <img src={aboutImg} alt="about" className={about.image} />
           </div>
           <div className={about.cont}>
-            <h1 className={about.title}>We Are Feane</h1>
+            <h1 className={about.title}>We Are Logo</h1>
             <p className={about.phargh}>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by

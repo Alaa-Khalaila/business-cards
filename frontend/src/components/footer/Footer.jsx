@@ -26,7 +26,7 @@ export const Footer = () => {
           </div>
           <div>
             <a>
-              <h4>Feane</h4>
+              <h4>Logo</h4>
             </a>
             <p>
               Necessary, making this the first true generator
