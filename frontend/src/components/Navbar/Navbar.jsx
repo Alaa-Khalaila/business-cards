@@ -4,8 +4,10 @@ import { useState, useEffect } from "react";
 import Nav from "./Navbar.module.css";
 import CartContext from "../../CartContex";
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const [tranlate, i18n] = useTranslation("global");
   const [active, setActive] = useState(false);
   const location = useLocation();
   useEffect(() => {
@@ -14,7 +16,11 @@ function Navbar() {
     }
   }, []);
 
-  const {items} = useContext(CartContext)
+  const { items } = useContext(CartContext);
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <nav className={`${Nav.navbar} ${active ? Nav.active : ""}`}>
@@ -28,7 +34,7 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#about">About</a>
+            <a href="#about">{tranlate("Nav.about")}</a>
           </li>
 
           <li>
@@ -38,7 +44,7 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#contact">Contact us</a>
+            <a href="#contact">{tranlate("Nav.contact")}</a>
           </li>
         </ul>
       </div>
@@ -47,7 +53,11 @@ function Navbar() {
           <span className={Nav.cart}>{items}</span>
           <i class="fa fa-cart-plus"></i>
         </a>
+     
         <button className={Nav.btn}>Sign in</button>
+        <button onClick={() => changeLanguage("en")}>en</button>
+        <button onClick={() => changeLanguage("ar")}>ar</button>
+
       </div>
     </nav>
   );

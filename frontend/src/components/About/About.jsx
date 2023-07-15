@@ -1,6 +1,8 @@
 import about from "./About.module.css";
 import aboutImg from "../../images/alaa.png";
+import { useTranslation } from "react-i18next";
 function About() {
+  const[t,i18n]=useTranslation("global");
   return (
     <section id="about" className={about.about}>
       <div className="container">
@@ -9,7 +11,7 @@ function About() {
             <img src={aboutImg} alt="about" className={about.image} />
           </div>
           <div className={about.cont}>
-            <h1 className={about.title}>We Are Logo</h1>
+            <h1 className={about.title}>{t("About.title")}</h1>
             <p className={about.phargh}>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
