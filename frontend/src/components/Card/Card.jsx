@@ -3,8 +3,10 @@ import styles from "./Card.module.css"
 import { useState } from "react";
 import { useContext } from "react";
 import CartContext from "../../CartContex";
+import { useTranslation } from "react-i18next";
 
 function Card(props) {
+    const [tranlate] = useTranslation("global");
     const [counter, setCounter] = useState(0)
 
     const { addToCart, removeFromCart } = useContext(CartContext)
@@ -29,7 +31,7 @@ function Card(props) {
                 <img src={props.img} alt="" className={styles.card__img} />
             </header>
             <main className={styles.card__main}>
-                <h4>Business Card</h4>
+                <h4>{tranlate("Card.title")}</h4>
             </main>
             <footer className={styles.card__footer}>
                 <span>1 JD</span>

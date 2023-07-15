@@ -33,12 +33,12 @@ function Navbar() {
           className={`${Nav.navbar} ${active ? Nav.active : ""}`}
           style={obj}
         >
-          <div className={Nav.left}>Logo</div>
+          <div className={Nav.left}> {tranlate("Nav.logo")}</div>
           <div className="left">
             <ul className={Nav.list}>
               <li>
                 <NavLink to="/" className={Nav.home} href="">
-                  Home
+                {tranlate("Nav.Home")}
                 </NavLink>
               </li>
 
@@ -50,7 +50,7 @@ function Navbar() {
 
               <li>
                 <NavLink to="terms" href="">
-                  Terms & Conditions
+                {tranlate("Nav.Terms & Conditions")}
                 </NavLink>
               </li>
 
