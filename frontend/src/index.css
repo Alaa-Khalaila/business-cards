@@ -9,6 +9,7 @@ a {
   --secondary: #ffbe33;
   --ternary: #f1f2f3;
   --header: #0c0c0c;
+  --red:#ff6060;
   --white: #ffffff;
 }
 
@@ -28,4 +29,12 @@ a {
 
 html {
   scroll-behavior: smooth;
+}
+
+.red{
+  background-color: var(--red);
+}
+
+.yellow{
+  background-color: var(--secondary);
 }

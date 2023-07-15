@@ -40,6 +40,12 @@
     font-weight: 800;
 }
 
+.card__footer__counter{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .test{
     background-color: green;
 }
