@@ -6,16 +6,14 @@
 }
 .footer_menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .contact_details {
   display: flex;
   flex-direction: column;
 }
 .contact_details a {
-  padding: 5px;
   margin: 5px;
-  font-size: 17px;
 }
 .contact_details a:hover {
   color: var(--secondary);
@@ -24,8 +22,11 @@
   padding: 5px;
   margin: 5px;
 }
+.social_icon {
+  margin: 20px;
+}
 .social_icon a {
-  margin-left: 15px;
+  margin-left: 10px;
   font-size: 30px;
 }
 
@@ -43,14 +44,13 @@ p {
 .footer_link {
   display: flex;
   flex-direction: column;
-  font-size: 17px;
 }
 .footer_link a {
-  margin: 7px;
+  margin: 5px;
 }
 .footer_link a:hover {
   color: var(--secondary);
 }
-.footer_copyright{
+.footer_copyright {
   margin: 30px;
 }

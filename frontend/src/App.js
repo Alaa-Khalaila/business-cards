@@ -2,6 +2,7 @@ import img from "./images/f1.png";
 import Hero from "./components/Hero/Hero";
 import "./normalize.css";
 import Cards from "./components/Cards/Cards";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   const cards = [
@@ -34,6 +35,7 @@ function App() {
     <>
       <Hero />
       <Cards cards={cards}></Cards>
+      <Footer/>
     </>
   );
 }
