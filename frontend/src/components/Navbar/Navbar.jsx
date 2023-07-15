@@ -6,8 +6,10 @@ import menu from "../../images/menu.png";
 import cancel from "../../images/cancel.png";
 import CartContext from "../../CartContex";
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const [tranlate, i18n] = useTranslation("global");
   const [active, setActive] = useState(false);
   const [toggleNav, setToggleNav] = useState(false);
   const location = useLocation();
@@ -18,7 +20,11 @@ function Navbar() {
     }
   }, []);
 
-  const {items} = useContext(CartContext)
+  const { items } = useContext(CartContext);
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <>
@@ -36,9 +42,11 @@ function Navbar() {
                 </NavLink>
               </li>
 
-              <li>
-                <a href="#about">About</a>
-              </li>
+
+          <li>
+            <a href="#about">{tranlate("Nav.about")}</a>
+          </li>
+
 
               <li>
                 <NavLink to="terms" href="">
@@ -47,7 +55,7 @@ function Navbar() {
               </li>
 
           <li>
-            <a href="#contact">Contact us</a>
+            <a href="#contact">{tranlate("Nav.contact")}</a>
           </li>
         </ul>
       </div>
@@ -56,7 +64,11 @@ function Navbar() {
           <span className={Nav.cart}>{items}</span>
           <i class="fa fa-cart-plus"></i>
         </a>
+     
         <button className={Nav.btn}>Sign in</button>
+        <button onClick={() => changeLanguage("en")}>en</button>
+        <button onClick={() => changeLanguage("ar")}>ar</button>
+
       </div>
       </nav>
       </div>
