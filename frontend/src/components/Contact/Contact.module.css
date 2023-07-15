@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 50vh;
-  padding: 2rem;
+  padding: 75px 0 40px 0;
   caret-color: var(--white);
   overflow: hidden;
   display: flex;

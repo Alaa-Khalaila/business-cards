@@ -41,7 +41,7 @@ function Contact() {
                   type="text"
                   name="name"
                   className={cont.input}
-                  placeholder="username"
+                  placeholder="Name"
                 />
               </div>
 
@@ -65,9 +65,9 @@ function Contact() {
 
               <div className={cont.inputContainer}>
                 <textarea
-                  name="massage"
+                  name="message"
                   className={cont.input}
-                  placeholder="massage"
+                  placeholder="Message"
                 ></textarea>
               </div>
               <input type="submit" value="Send" className={cont.contactBtn} />

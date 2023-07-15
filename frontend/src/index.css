@@ -25,3 +25,5 @@ a{
 .relative {
   position: relative;
 }
+
+html{scroll-behavior:smooth}
