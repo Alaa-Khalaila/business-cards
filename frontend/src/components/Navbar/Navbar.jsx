@@ -41,7 +41,7 @@ function Navbar() {
             <ul className={Nav.list}>
               <li>
                 <NavLink to="/" className={Nav.home} href="">
-                  Home
+                {tranlate("Nav.Home")}
                 </NavLink>
               </li>
 
@@ -53,7 +53,7 @@ function Navbar() {
 
               <li>
                 <NavLink to="terms" href="">
-                  Terms & Conditions
+                {tranlate("Nav.Terms & Conditions")}
                 </NavLink>
               </li>
 
