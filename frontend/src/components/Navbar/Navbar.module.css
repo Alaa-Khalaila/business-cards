@@ -45,6 +45,9 @@
 .list .home {
   color: var(--secondary);
 }
+.icon{
+  position: relative;
+}
 .icon i {
   color: var(--white);
   font-size: 25px;
@@ -62,3 +65,18 @@
 .active {
   background-color: var(--primary);
 }
+
+.cart{
+  color: var(--white);
+  background-color: red;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  left: -5px;
+}
+

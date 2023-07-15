@@ -2,15 +2,19 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Nav from "./Navbar.module.css";
+import CartContext from "../../CartContex";
+import { useContext } from "react";
+
 function Navbar() {
   const [active, setActive] = useState(false);
   const location = useLocation();
   useEffect(() => {
     if (location.pathname === "/terms") {
       setActive(true);
-      console.log(location);
     }
   }, []);
+
+  const {items} = useContext(CartContext)
 
   return (
     <nav className={`${Nav.navbar} ${active ? Nav.active : ""}`}>
@@ -40,6 +44,7 @@ function Navbar() {
       </div>
       <div className={Nav.sign}>
         <a href="" className={Nav.icon}>
+          <span className={Nav.cart}>{items}</span>
           <i class="fa fa-cart-plus"></i>
         </a>
         <button className={Nav.btn}>Sign in</button>
