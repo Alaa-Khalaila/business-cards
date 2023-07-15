@@ -28,3 +28,20 @@
   font-size: 1.1rem;
   cursor: pointer;
 }
+@media screen and (max-width: 850px) {
+  .paragh {
+    max-width: 100%;
+    margin: 0 2em 2em 2em;
+    text-align: center;
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+  .paragh2 {
+    line-height: 1.5;
+  }
+  .btn {
+    width: 130px;
+    height: 40px;
+  }
+}
