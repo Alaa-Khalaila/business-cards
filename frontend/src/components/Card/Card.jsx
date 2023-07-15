@@ -1,10 +1,14 @@
 import Button from "../Button/Button"
 import styles from "./Card.module.css"
 import { useState } from "react";
+import { useContext } from "react";
+import CartContext from "../../CartContex";
 
 function Card(props){
     const [isClicked, setIsClicked] = useState(false);
     const [btnTitle, setBtnTitle] = useState("+")
+
+    const {addToCart} = useContext(CartContext)
     
     const onAddClick = () =>{
         if (isClicked){
@@ -14,6 +18,7 @@ function Card(props){
             setIsClicked(true)
             setBtnTitle(<i class="fa fa-check"></i>)
         }
+        addToCart()
     }
 
     return(
