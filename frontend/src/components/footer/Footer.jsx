@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import style from "./footer.module.css";
+import logo from "../../images/logo.png"
 
 export const Footer = () => {
   const [translate] = useTranslation("global");
@@ -28,7 +29,7 @@ export const Footer = () => {
           </div>
           <div>
             <a>
-              <h4>{translate("Footer.logo")}</h4>
+              <img className={style.footer_logo} src={logo} alt="" />
             </a>
             <p>
             {translate("Footer.text")}

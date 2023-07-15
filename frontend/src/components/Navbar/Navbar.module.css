@@ -5,7 +5,7 @@
   position: absolute;
   width: 100%;
   top: 0;
-  padding: 25px 0;
+  padding: 20px 0;
 }
 .image {
   width: 15%;
@@ -45,7 +45,7 @@
 .list .home {
   color: var(--secondary);
 }
-.icon{
+.icon {
   position: relative;
 }
 .icon i {
@@ -76,14 +76,17 @@
     display: none;
     height: 100vh;
     background-color: var(--primary);
+    justify-content: unset;
     padding: 80px;
   }
   .list {
     flex-direction: column;
     text-align: center;
+    padding: 45% 0;
+    font-size: 2rem;
   }
   .list li {
-    padding: 0.3em;
+    padding: 0.4em;
   }
 
   .menu,
@@ -97,8 +100,16 @@
   .container {
     display: none;
   }
+  .btn {
+    width: 160px;
+    height: 50px;
+    font-size: 1.7em;
+  }
+  .icon i {
+    font-size: 35px;
+  }
 }
-.cart{
+.cart {
   color: var(--white);
   background-color: red;
   width: 23px;
@@ -108,7 +119,16 @@
   justify-content: center;
   border-radius: 50%;
   position: absolute;
-  top: -12px;
+  top: -8px;
   left: -5px;
+}
+
+.sign{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  height: 100px;
 }
 

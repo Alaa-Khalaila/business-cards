@@ -8,6 +8,6 @@
 @media screen and (max-width: 600px) {
   .cards {
     grid-template-columns: 1fr;
-    margin: 30px;
+    margin: 0 30px;
   }
 }
