@@ -4,34 +4,42 @@ import { useState } from "react";
 import { useContext } from "react";
 import CartContext from "../../CartContex";
 
-function Card(props){
-    const [isClicked, setIsClicked] = useState(false);
-    const [btnTitle, setBtnTitle] = useState("+")
+function Card(props) {
+    const [counter, setCounter] = useState(0)
 
-    const {addToCart} = useContext(CartContext)
-    
-    const onAddClick = () =>{
-        if (isClicked){
-            setIsClicked(false)
-            setBtnTitle("+")
-        }else{
-            setIsClicked(true)
-            setBtnTitle(<i class="fa fa-check"></i>)
-        }
+    const { addToCart, removeFromCart } = useContext(CartContext)
+
+    const onAddClick = () => {
+        const newCounter = counter + 1
+        setCounter(newCounter)
         addToCart()
     }
 
-    return(
+    const onRemoveClick = () => {
+        if(counter){
+            const newCounter = counter - 1
+            setCounter(newCounter)
+            removeFromCart()
+        }
+    }
+
+    return (
         <div className={styles.card}>
             <header className={styles.card__header}>
-                <img src={props.img} alt="" className={styles.card__img}/>
+                <img src={props.img} alt="" className={styles.card__img} />
             </header>
             <main className={styles.card__main}>
                 <h4>Business Card</h4>
             </main>
             <footer className={styles.card__footer}>
                 <span>1 JD</span>
-                <Button classList={isClicked? styles.test: ""} onClick={onAddClick} text={btnTitle}></Button>
+                <div className={styles.card__footer__counter}>
+                <Button onClick={onRemoveClick} classList="red" text="-"></Button>
+                    <span>{counter}</span>
+                    <Button onClick={onAddClick} classList="yellow" text="+"></Button>
+                    
+                </div>
+
             </footer>
         </div>
     )
