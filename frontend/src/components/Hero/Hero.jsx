@@ -1,5 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import heroStyle from "./Hero.module.css";
+import car from "../../images/car.png"
 
 function Hero() {
   return (
@@ -7,6 +8,7 @@ function Hero() {
       <div className="container relative">
         <Navbar />
         <div className={heroStyle.paragh}>
+          <div>
           <h1 className={heroStyle.title}>Business Cards Store</h1>
           <p className={heroStyle.paragh2}>
             Doloremque, itaque aperiam facilis rerum, commodi, temporibus
@@ -15,6 +17,9 @@ function Hero() {
             ducimus libero ipsam.
           </p>
           <a href="#cards"><button className={heroStyle.btn}>Order Now</button></a>
+          </div>
+          <img src={car} alt="" />
+
           
         </div>
       </div>
