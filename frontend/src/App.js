@@ -1,40 +1,18 @@
 import img from "./images/f1.png";
-import Hero from "./components/Hero/Hero";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Terms from "./components/Terms/terms";
 import "./normalize.css";
-import Cards from "./components/Cards/Cards";
+
+import Home from "./pages/Home";
 
 function App() {
-  const cards = [
-    {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
-      img: img,
-    },
-    {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
-      img: img,
-    },
-    {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
-      img: img,
-    },
-    {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
-      img: img,
-    },
-  ];
   return (
-    <>
-      <Hero />
-      <Cards cards={cards}></Cards>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="terms" element={<Terms />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

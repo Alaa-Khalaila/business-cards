@@ -1,27 +1,30 @@
 import Logo from "../../Logo.png";
+import { NavLink, Outlet } from "react-router-dom";
 import Nav from "./Navbar.module.css";
 function Navbar() {
   return (
     <nav className={Nav.navbar}>
-      <div className={Nav.left}>
-        <img className={Nav.image} src={Logo} alt="logo" />
-      </div>
+      <div className={Nav.left}>Logo</div>
       <div className="left">
         <ul className={Nav.list}>
           <li>
-            <a href="">Home</a>
+            <NavLink to="/" className={Nav.home} href="">
+              Home
+            </NavLink>
           </li>
 
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
 
           <li>
-            <a href="">Terms & Conditions</a>
+            <NavLink to="terms" href="">
+              Terms & Conditions
+            </NavLink>
           </li>
 
           <li>
-            <a href="">Contact us</a>
+            <a href="#contact">Contact us</a>
           </li>
         </ul>
       </div>

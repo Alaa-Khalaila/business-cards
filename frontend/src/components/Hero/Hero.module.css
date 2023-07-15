@@ -1,20 +1,22 @@
 .hero {
   position: relative;
-  background-image: url(../../hero-bg.jpg);
+  background-image: url(../../images/bg.jpg);
   background-size: cover;
   height: 100vh;
 }
 .paragh {
-  padding: 18% 0 0 0;
+  padding: 24% 0 0 0;
   color: var(--white);
   max-width: 50%;
 }
 .title {
   padding-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: Dancing Script, cursive;
 }
 .paragh2 {
-  padding-bottom: 20px;
+  padding-bottom: 38px;
+  line-height: 1.7;
 }
 .btn {
   border: none;
@@ -24,4 +26,5 @@
   height: 40px;
   border-radius: 50px;
   font-size: 1.1rem;
+  cursor: pointer;
 }
