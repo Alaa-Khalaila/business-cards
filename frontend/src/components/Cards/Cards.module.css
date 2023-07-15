@@ -1,7 +1,13 @@
-.cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-    list-style: none;
-    padding: 75px 0 40px 0;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  list-style: none;
+  padding: 75px 0 40px 0;
+}
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+    margin: 30px;
+  }
 }
