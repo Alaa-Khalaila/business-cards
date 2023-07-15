@@ -1,6 +1,7 @@
 :root {
   --primary: #222831;
   --secondary: #ffbe33;
+  --ternary: #f1f2f3;
   --header: #0c0c0c;
   --white: #ffffff;
 }
@@ -9,4 +10,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
 }
