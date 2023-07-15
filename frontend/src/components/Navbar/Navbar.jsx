@@ -1,16 +1,23 @@
-import Logo from "../../Logo.png";
 import { NavLink, Outlet } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Nav from "./Navbar.module.css";
 import CartContext from "../../CartContex";
 import { useContext } from "react";
 
 function Navbar() {
+  const [active, setActive] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/terms") {
+      setActive(true);
+    }
+  }, []);
 
   const {items} = useContext(CartContext)
-  console.log(items);
 
   return (
-    <nav className={Nav.navbar}>
+    <nav className={`${Nav.navbar} ${active ? Nav.active : ""}`}>
       <div className={Nav.left}>Logo</div>
       <div className="left">
         <ul className={Nav.list}>
