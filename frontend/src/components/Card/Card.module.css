@@ -23,10 +23,19 @@
 .card__main{
     padding: 20px;
 }
+.card__main h4{
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
 
 .card__footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.card__footer span {
+    font-weight: 800;
 }

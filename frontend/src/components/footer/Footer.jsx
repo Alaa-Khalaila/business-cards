@@ -5,6 +5,7 @@ export const Footer = () => {
   return (
     <>
       <div className={style.footer}>
+        <div className="container">
         <div className={style.footer_menu}>
           <div>
             <h4>Contact Us</h4>
@@ -63,6 +64,8 @@ export const Footer = () => {
           <p> &copy; All Rights Reserved By</p>
           <p> &copy; Distributed By</p>
         </div>
+        </div>
+        
       </div>
     </>
   );
