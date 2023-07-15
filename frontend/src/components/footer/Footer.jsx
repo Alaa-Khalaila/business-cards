@@ -1,23 +1,25 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import style from "./footer.module.css";
 import logo from "../../images/logo.png"
 
 export const Footer = () => {
+  const [translate] = useTranslation("global");
   return (
     <>
       <div className={style.footer}>
         <div className="container">
         <div className={style.footer_menu}>
           <div>
-            <h4>Contact Us</h4>
+            <h4>{translate("Footer.contact")}</h4>
             <div className={style.contact_details}>
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>Location</span>
+                <span>{translate("Footer.location")}</span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>call +07589520</span>
+                <span>{translate("Footer.call")} +07589520</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -30,9 +32,7 @@ export const Footer = () => {
               <img className={style.footer_logo} src={logo} alt="" />
             </a>
             <p>
-              Necessary, making this the first true generator
-              <br /> on the Internet . It uses a dictionary
-              <br /> of over 200 Latin words, combined with
+            {translate("Footer.text")}
             </p>
             <div className={style.social_icon}>
               <a href="">
@@ -53,17 +53,17 @@ export const Footer = () => {
             </div>
           </div>
           <div>
-            <h4>Links</h4>
+            <h4>{translate("Footer.links")}</h4>
             <div className={style.footer_link}>
-              <a href="#">Home</a>
-              <a href="">Term and Conditions</a>
-              <a href="#about">About</a>
+              <a href="#">{translate("Footer.home")}</a>
+              <a href="">{translate("Footer.term")}</a>
+              <a href="#about">{translate("Footer.about")}</a>
             </div>
           </div>
         </div>
         <div className={style.footer_copyright}>
-          <p> &copy; All Rights Reserved By Alaa Khalila</p>
-          <p> &copy; Distributed By Alaa Khalila</p>
+          <p> &copy; {translate("Footer.copyRight-1")}</p>
+          <p> &copy; {translate("Footer.copyRight-2")}</p>
         </div>
         </div>
         
