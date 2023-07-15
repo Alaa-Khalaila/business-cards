@@ -1,8 +1,9 @@
 import styles from "./Button.module.css"
 
 function Button(props){
+
     return(
-        <div className={styles.btn}>
+        <div onClick={props.onClick} className={styles.btn +" "+ props.classList}>
             {props.text}
         </div>
     )
