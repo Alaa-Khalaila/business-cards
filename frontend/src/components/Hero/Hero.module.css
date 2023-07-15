@@ -1,0 +1,27 @@
+.hero {
+  position: relative;
+  background-image: url(../../hero-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.paragh {
+  padding: 18% 0 0 0;
+  color: var(--white);
+  max-width: 50%;
+}
+.title {
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+.paragh2 {
+  padding-bottom: 20px;
+}
+.btn {
+  border: none;
+  background-color: var(--secondary);
+  color: var(--white);
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+}

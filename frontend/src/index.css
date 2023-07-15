@@ -1,6 +1,26 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+:root {
   --primary: #222831;
   --secondary: #ffbe33;
-  --header:#0c0c0c;
-  --esraa:var(--primary);
+  --ternary: #f1f2f3;
+  --header: #0c0c0c;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.relative {
+  position: relative;
 }
