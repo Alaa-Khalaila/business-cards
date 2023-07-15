@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className={Nav.navbar}>
       <div className={Nav.left}>
-      Feane
+      Logo
       </div>
       <div className="left">
         <ul className={Nav.list}>
