@@ -10,7 +10,6 @@ import "./normalize.css";
 import Cards from "./components/Cards/Cards";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/Contact/Contact";
-import About from "./components/About/About";
 
 function App() {
   const cards = [
@@ -37,7 +36,6 @@ function App() {
     <>
       <Hero />
       <Cards cards={cards}></Cards>
-      <About />
       <Contact></Contact>
       <Footer></Footer>
     </>
