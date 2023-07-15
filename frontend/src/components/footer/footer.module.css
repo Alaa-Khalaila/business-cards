@@ -60,3 +60,10 @@ p {
 .footer_copyright{
   margin: 30px;
 }
+
+@media screen and (max-width: 600px) {
+  .footer_menu {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
