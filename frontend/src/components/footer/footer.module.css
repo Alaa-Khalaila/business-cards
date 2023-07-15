@@ -2,11 +2,18 @@
   background-color: var(--primary);
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 75px 0 40px 0;
 }
 .footer_menu {
   display: flex;
   justify-content: space-between;
+}
+
+.footer_menu h4 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 .contact_details {
   display: flex;
@@ -22,8 +29,8 @@
   padding: 5px;
   margin: 5px;
 }
-.social_icon {
-  margin: 20px;
+.social_icon{
+  padding-top: 15px;
 }
 .social_icon a {
   margin-left: 10px;
@@ -33,11 +40,7 @@
 .social_icon a:hover {
   color: var(--secondary);
 }
-h4 {
-  font-family: "Dancing Script", cursive;
-  font-weight: bolder;
-  font-size: 30px;
-}
+
 p {
   font-size: 17px;
 }

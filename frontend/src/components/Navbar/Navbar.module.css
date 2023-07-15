@@ -5,6 +5,7 @@
   position: absolute;
   width: 100%;
   top: 0;
+  padding: 25px 0;
 }
 .image {
   width: 15%;
@@ -12,9 +13,35 @@
 .list {
   list-style: none;
   display: flex;
+  font-size: 18px;
 }
-a {
-  padding: 10px;
+
+.list li{
+  margin-right: 18px;
+}
+.list a {
   text-decoration: none;
   color: var(--white);
+}
+.list a::after {
+  content: '';
+  background-color: var(--secondary);
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 4px;
+  transition: width .3s;
+}
+
+.list a:hover::after {
+  width: 100%;
+}
+.left{
+  color: var(--white);
+  font-family: Dancing Script, cursive;
+  font-size: 38px;
+}
+
+.list .home{
+  color: var(--secondary);
 }

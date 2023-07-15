@@ -4,16 +4,16 @@ function Navbar() {
   return (
     <nav className={Nav.navbar}>
       <div className={Nav.left}>
-        <img className={Nav.image} src={Logo} alt="logo" />
+      Logo
       </div>
       <div className="left">
         <ul className={Nav.list}>
           <li>
-            <a href="">Home</a>
+            <a className={Nav.home} href="">Home</a>
           </li>
 
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
 
           <li>
@@ -21,7 +21,7 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="">Contact us</a>
+            <a href="#contact">Contact us</a>
           </li>
         </ul>
       </div>
