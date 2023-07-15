@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+
+import img from "./images/f1.png"
 import './App.css';
+import "./normalize.css"
+import Cards from "./components/Cards/Cards";
 
 function App() {
+  const cards = [
+    { title: "test", description: "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd", img: img },
+    { title: "test", description: "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd", img: img },
+    { title: "test", description: "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd", img: img },
+    { title: "test", description: "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd", img: img }
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Cards cards={cards}></Cards>
   );
 }
 
