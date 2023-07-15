@@ -54,3 +54,6 @@ p {
 .footer_copyright {
   margin: 30px;
 }
+.footer_copyright p {
+  margin: 10px;
+}
