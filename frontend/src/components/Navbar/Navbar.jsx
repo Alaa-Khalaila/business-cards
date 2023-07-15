@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Nav from "./Navbar.module.css";
 import menu from "../../images/menu.png";
 import cancel from "../../images/cancel.png";
+import CartContext from "../../CartContex";
+import { useContext } from "react";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -13,9 +15,10 @@ function Navbar() {
   useEffect(() => {
     if (location.pathname === "/terms") {
       setActive(true);
-      console.log(location);
     }
   }, []);
+
+  const {items} = useContext(CartContext)
 
   return (
     <>
@@ -43,18 +46,17 @@ function Navbar() {
                 </NavLink>
               </li>
 
-              <li>
-                <a href="#contact">Contact us</a>
-              </li>
-            </ul>
-          </div>
-          <div className={Nav.sign}>
-            <a href="" className={Nav.icon}>
-              <i class="fa fa-cart-plus"></i>
-            </a>
-            <button className={Nav.btn}>Sign in</button>
-          </div>
-        </nav>
+          <li>
+            <a href="#contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div className={Nav.sign}>
+        <a href="" className={Nav.icon}>
+          <span className={Nav.cart}>{items}</span>
+          <i class="fa fa-cart-plus"></i>
+        </a>
+        <button className={Nav.btn}>Sign in</button>
       </div>
       {!toggleNav && (
         <img
