@@ -9,43 +9,26 @@ import Hero from "./components/Hero/Hero";
 import "./normalize.css";
 import Cards from "./components/Cards/Cards";
 import Footer from "./components/footer/Footer";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const cards = [
     {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
       img: card1,
     },
     {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
       img: card2,
     },
     {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
       img: card3,
     },
     {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
       img: card4,
     },
     {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
       img: card5,
     },
     {
-      title: "test",
-      description:
-        "assssssssssssssssd asdas dasedqwdsa dkljasklj asd jklasjdqw klsjadkljaskl jaskldjaslkdas asdasd",
       img: card6,
     },
   ];
@@ -53,6 +36,7 @@ function App() {
     <>
       <Hero />
       <Cards cards={cards}></Cards>
+      <Contact></Contact>
       <Footer></Footer>
     </>
   );

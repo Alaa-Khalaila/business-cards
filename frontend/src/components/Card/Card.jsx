@@ -8,8 +8,7 @@ function Card(props){
                 <img src={props.img} alt="" className={styles.card__img}/>
             </header>
             <main className={styles.card__main}>
-                <h3>{props.title}</h3>
-                <p>{props.description}</p>
+                <h4>Business Card</h4>
             </main>
             <footer className={styles.card__footer}>
                 <span>1 JD</span>
