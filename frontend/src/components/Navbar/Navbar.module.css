@@ -5,6 +5,7 @@
   position: absolute;
   width: 100%;
   top: 0;
+  padding: 25px 0;
 }
 .image {
   width: 15%;
@@ -17,4 +18,9 @@ a {
   padding: 10px;
   text-decoration: none;
   color: var(--white);
+}
+.left{
+  color: var(--white);
+  font-family: Dancing Script, cursive;
+  font-size: 32px;
 }

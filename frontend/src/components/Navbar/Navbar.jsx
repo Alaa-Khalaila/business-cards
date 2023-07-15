@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className={Nav.navbar}>
       <div className={Nav.left}>
-        <img className={Nav.image} src={Logo} alt="logo" />
+      Feane
       </div>
       <div className="left">
         <ul className={Nav.list}>

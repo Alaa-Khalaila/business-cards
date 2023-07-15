@@ -12,6 +12,7 @@
 .card__header{
     background-color: var(--ternary);
     border-radius: 20px 20px 0 30%;
+    padding: 36px;
 }
 
 .card__main{
