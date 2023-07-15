@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./footer.module.css";
+import logo from "../../images/logo.png"
 
 export const Footer = () => {
   return (
@@ -26,7 +27,7 @@ export const Footer = () => {
           </div>
           <div>
             <a>
-              <h4>Logo</h4>
+              <img className={style.footer_logo} src={logo} alt="" />
             </a>
             <p>
               Necessary, making this the first true generator

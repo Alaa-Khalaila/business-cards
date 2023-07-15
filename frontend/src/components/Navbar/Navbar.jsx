@@ -7,11 +7,13 @@ import cancel from "../../images/cancel.png";
 import CartContext from "../../CartContex";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
+import logo from "../../images/logo.png"
 
 function Navbar() {
   const [tranlate, i18n] = useTranslation("global");
   const [active, setActive] = useState(false);
   const [toggleNav, setToggleNav] = useState(false);
+  const [isEnglish,setIsEnglish] = useState(false)
   const location = useLocation();
   let obj = toggleNav ? { display: "flex" } : {};
   useEffect(() => {
@@ -24,6 +26,7 @@ function Navbar() {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    setIsEnglish(!isEnglish)
   };
 
   return (
@@ -33,7 +36,7 @@ function Navbar() {
           className={`${Nav.navbar} ${active ? Nav.active : ""}`}
           style={obj}
         >
-          <div className={Nav.left}>Logo</div>
+          <img className={Nav.logo} src={logo} alt="" />
           <div className="left">
             <ul className={Nav.list}>
               <li>
@@ -60,15 +63,16 @@ function Navbar() {
         </ul>
       </div>
       <div className={Nav.sign}>
+      {!isEnglish? <i onClick={() => changeLanguage("ar")} class="fa fa-globe"></i>:""}
+        {isEnglish? <i onClick={() => changeLanguage("en")} class="fa fa-globe"></i>:""}
         <a href="" className={Nav.icon}>
-          <span className={Nav.cart}>{items}</span>
+          {items?<span className={Nav.cart}>{items}</span>:""}
           <i class="fa fa-cart-plus"></i>
         </a>
-     
-        <button className={Nav.btn}>Sign in</button>
-        <button onClick={() => changeLanguage("en")}>en</button>
-        <button onClick={() => changeLanguage("ar")}>ar</button>
 
+        <button className={Nav.btn}>Sign in</button>
+
+        
       </div>
       </nav>
       </div>
