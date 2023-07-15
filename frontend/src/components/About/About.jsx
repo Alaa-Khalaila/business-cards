@@ -1,8 +1,8 @@
 import about from "./About.module.css";
-import aboutImg from "../../about.png";
+import aboutImg from "../../images/alaa.png";
 function About() {
   return (
-    <section className={about.about}>
+    <section id="about" className={about.about}>
       <div className="container">
         <div className={about.flex}>
           <div className={about.left}>
