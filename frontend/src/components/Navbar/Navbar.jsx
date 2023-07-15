@@ -1,15 +1,16 @@
 import Logo from "../../Logo.png";
+import { NavLink, Outlet } from "react-router-dom";
 import Nav from "./Navbar.module.css";
 function Navbar() {
   return (
     <nav className={Nav.navbar}>
-      <div className={Nav.left}>
-      Logo
-      </div>
+      <div className={Nav.left}>Logo</div>
       <div className="left">
         <ul className={Nav.list}>
           <li>
-            <a className={Nav.home} href="">Home</a>
+            <NavLink to="/" className={Nav.home} href="">
+              Home
+            </NavLink>
           </li>
 
           <li>
@@ -17,7 +18,9 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="">Terms & Conditions</a>
+            <NavLink to="terms" href="">
+              Terms & Conditions
+            </NavLink>
           </li>
 
           <li>
