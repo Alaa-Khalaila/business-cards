@@ -58,6 +58,8 @@ function Navbar() {
         </a>
         <button className={Nav.btn}>Sign in</button>
       </div>
+      </nav>
+      </div>
       {!toggleNav && (
         <img
           className={Nav.menu}
