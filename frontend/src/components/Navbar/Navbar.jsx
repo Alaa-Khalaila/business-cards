@@ -26,7 +26,13 @@ function Navbar() {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    if(!isEnglish){
+      document.querySelector("html").setAttribute("dir", "rtl");
+    }else{
+      document.querySelector("html").removeAttribute("dir")
+    }
     setIsEnglish(!isEnglish)
+   
   };
 
   return (
