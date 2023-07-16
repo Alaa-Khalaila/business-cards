@@ -7,11 +7,11 @@
         "Terms & Conditions":"Terms & Conditions",
         "sign-in":"Sign in"
     },
-    "Hero":{
-        "title":"Business Cards Store",
-        "text":"Doloremque, itaque aperiam facilis rerum, commodi,temporibus sapiente ad mollitia laborum quam quisquam esseerror unde. Tempora ex doloremque, labore, sunt repellat dolore,iste magni quos nihil ducimus libero ipsam.",
-        "button":"Order Now"
-    },
+  "Hero": {
+    "title": "Business Cards Store",
+    "text": "Buy a ticket for one Jordanian Dinar and enter the draw for the car. Increase your chances of winning the car by purchasing more than one ticket.",
+    "button": "Order Now"
+  },
     "About":{
         "title":"We are Lifetime opportunity",
         "text":"There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing  hidden in the middle of text. All",

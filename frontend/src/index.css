@@ -9,7 +9,7 @@ a {
   --secondary: #ffbe33;
   --ternary: #f1f2f3;
   --header: #0c0c0c;
-  --red:#ff6060;
+  --red: #ff6060;
   --white: #ffffff;
 }
 
@@ -31,16 +31,19 @@ html {
   scroll-behavior: smooth;
 }
 
-.red{
+.red {
   background-color: var(--red);
 }
 
-.yellow{
+.yellow {
   background-color: var(--secondary);
 }
 
-.fa-globe{
+.fa-globe {
   color: var(--white);
   font-size: 24px;
   cursor: pointer;
+}
+html[dir] * {
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
