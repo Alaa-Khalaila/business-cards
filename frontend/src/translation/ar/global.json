@@ -1,48 +1,47 @@
-{  
-    "Nav":{
-        "logo":"لوجو",
-        "Home":"الرئيسية",
-        "contact":"تواصل معنا",
-        "about":"حولنا",
-        "Terms & Conditions":"الشروط والاحكام",
-        "sign-in":"تسجيل الدخول"
-    },
-    "Hero":{
-        "title":"متجر بطاقات العمل ",
-        "text":"Doloremque, itaque aperiam facilis rerum, commodi,temporibus sapiente ad mollitia laborum quam quisquam esseerror unde. Tempora ex doloremque, labore, sunt repellat dolore,iste magni quos nihil ducimus libero ipsam.",
-        "button":"اطلب الان"
-    },
-    "About":{
-        "title":"نحن لوجو",
-        "text":"There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing  hidden in the middle of text. All",
-        "button":"اقرأ المزيد"
-    },
-    "Card":{
-        "title":"بطاقة عمل"
-    },
-    "Contact":{
-        "title":"تواصل معنا",
-         "name":"الاسم",
-         "email":"الايميل",
-         "phone":"رقم الهاتف",
-         "message":"الرسالة",
-         "button":"ارسل",
-         "Get_in_Touch":"ابقى على اتصال",
-         "text":"Feel free to get in touch whith me. I'm always open ro discussing new projects, creative ideas or opportunities to be part of your visions.",
-         "location":"الاردن-عمان"
-    },
-    "Footer":{
-        "contact":"تواصل معنا",
-        "location":"الموقع",
-        "call":"اتصل",
-        "logo":"لوجو",
-        "text":" Necessary, making this the first true generator on the Internet . It uses a dictionary of over 200 Latin words, combined with",
-        "links":"الروابط",
-        "home":"الرئيسية",
-        "term":"الشروط والاحكام",
-        "about":"حولنا",
-        "copyRight-1":"جميع الحفوق محفوظة بواسطة علاء الخلايلة",
-        "copyRight-2":"توزيع بواسطة علاء الخلايلة"
-    }
-  
+{
+  "Nav": {
+    "logo": "لوجو",
+    "Home": "الرئيسية",
+    "contact": "تواصل معنا",
+    "about": "حولنا",
+    "Terms & Conditions": "الشروط والاحكام",
+    "sign-in": "تسجيل الدخول"
+  },
+  "Hero": {
+    "title": "متجر بطاقات العمل ",
+    "text": "اشتري بطاقة بدينار وادخل معنا على السحب على السيارة , ضاعف فرصة ربحك للسيارة بشراء اكثر من بطاقة",
+    "button": "اطلب الان"
+  },
+  "About": {
+    "title": "نحن لوجو",
+    "text": "There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing  hidden in the middle of text. All",
+    "button": "اقرأ المزيد"
+  },
+  "Card": {
+    "title": "بطاقة عمل"
+  },
+  "Contact": {
+    "title": "تواصل معنا",
+    "name": "الاسم",
+    "email": "الايميل",
+    "phone": "رقم الهاتف",
+    "message": "الرسالة",
+    "button": "ارسل",
+    "Get_in_Touch": "ابقى على اتصال",
+    "text": "Feel free to get in touch whith me. I'm always open ro discussing new projects, creative ideas or opportunities to be part of your visions.",
+    "location": "الاردن-عمان"
+  },
+  "Footer": {
+    "contact": "تواصل معنا",
+    "location": "الموقع",
+    "call": "اتصل",
+    "logo": "لوجو",
+    "text": " Necessary, making this the first true generator on the Internet . It uses a dictionary of over 200 Latin words, combined with",
+    "links": "الروابط",
+    "home": "الرئيسية",
+    "term": "الشروط والاحكام",
+    "about": "حولنا",
+    "copyRight-1": "جميع الحفوق محفوظة بواسطة علاء الخلايلة",
+    "copyRight-2": "توزيع بواسطة علاء الخلايلة"
+  }
 }
