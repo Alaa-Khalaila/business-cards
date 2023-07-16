@@ -19,7 +19,7 @@ export const Footer = () => {
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>{translate("Footer.call")} +07589520</span>
+                <span>{translate("Footer.call")} 0786577777</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>

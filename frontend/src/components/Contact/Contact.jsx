@@ -27,7 +27,7 @@ function Contact() {
               </div>
               <div className={cont.information}>
                 <img src={phone} alt="phone" className={cont.icon} />
-                <p>+962 70000000</p>
+                <p>0786577777</p>
               </div>
             </div>
           </div>

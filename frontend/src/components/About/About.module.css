@@ -11,6 +11,8 @@
   justify-content: center;
   align-items: center;
 }
+
+
 .cont {
   width: 50%;
   padding-left: 60px;
@@ -43,5 +45,11 @@ flex-direction: column;
   }
   .btn{
 width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html[dir] .flex{
+    flex-direction: row-reverse;
   }
 }

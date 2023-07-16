@@ -44,6 +44,6 @@ html {
   font-size: 24px;
   cursor: pointer;
 }
-html[dir] * {
+html[dir] *:not(i){
   font-family: "Noto Kufi Arabic", sans-serif;
 }
