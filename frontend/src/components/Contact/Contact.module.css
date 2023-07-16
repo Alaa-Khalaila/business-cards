@@ -130,4 +130,7 @@ textarea.input {
   .contactContainer {
     background: none;
   }
+  .all{
+    padding-top: 0;
+  }
 }

@@ -1,47 +1,48 @@
 {
-  "Nav": {
-    "logo": "logo",
-    "Home": "Home",
-    "contact": "Contact us",
-    "about": "About",
-    "Terms & Conditions": "Terms & Conditions",
-    "sign-in": "Sign in"
-  },
+    "Nav":{
+        "logo":"logo",
+        "Home":"Home",
+        "contact":"Contact us",
+        "about":"About",
+        "Terms & Conditions":"Terms & Conditions",
+        "sign-in":"Sign in"
+    },
   "Hero": {
     "title": "Business Cards Store",
     "text": "Buy a ticket for one Jordanian Dinar and enter the draw for the car. Increase your chances of winning the car by purchasing more than one ticket.",
     "button": "Order Now"
   },
-  "About": {
-    "title": "we are Logo",
-    "text": "There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing  hidden in the middle of text. All",
-    "button": "Read More"
-  },
-  "Card": {
-    "title": "Business Card"
-  },
-  "Contact": {
-    "title": "Contact us",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "message": "Message",
-    "button": "send",
-    "Get_in_Touch": "Get in Touch",
-    "text": "Feel free to get in touch whith me. I'm always open ro discussing new projects, creative ideas or opportunities to be part of your visions.",
-    "location": "Jordan-Amman"
-  },
-  "Footer": {
-    "contact": "Contact Us",
-    "location": "location",
-    "call": "call",
-    "logo": "logo",
-    "text": " Necessary, making this the first true generator on the Internet . It uses a dictionary of over 200 Latin words, combined with",
-    "links": "Links",
-    "home": "Home",
-    "term": "Term and Condition",
-    "about": "About",
-    "copyRight-1": "All Rights Reserved By Alaa Khalila",
-    "copyRight-2": "Distributed By Alaa Khalila"
-  }
+    "About":{
+        "title":"We are Lifetime opportunity",
+        "text":"There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing  hidden in the middle of text. All",
+        "button":"Read More"
+    },
+    "Card":{
+        "title":"Business Card",
+        "jd":"JD"
+    },
+    "Contact":{
+        "title":"Contact us",
+         "name":"Name",
+         "email":"Email",
+         "phone":"Phone",
+         "message":"Message",
+         "button":"send",
+         "Get_in_Touch":"Get in Touch",
+         "text":"Feel free to get in touch whith me. I'm always open ro discussing new projects, creative ideas or opportunities to be part of your visions.",
+         "location":"Jordan-Amman"
+    },
+    "Footer":{
+        "contact":"Contact Us",
+        "location":"location",
+        "call":"call",
+        "logo":"logo",
+        "text":" Necessary, making this the first true generator on the Internet . It uses a dictionary of over 200 Latin words, combined with",
+        "links":"Links",
+        "home":"Home",
+        "term":"Term and Condition",
+        "about":"About",
+        "copyRight-1":"All Rights Reserved By Alaa Khalila",
+        "copyRight-2":"Distributed By Alaa Khalila"
+    }
 }

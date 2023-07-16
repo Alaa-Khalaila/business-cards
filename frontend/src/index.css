@@ -42,7 +42,6 @@ html {
 .fa-globe {
   color: var(--white);
   font-size: 24px;
-  margin-right: 12px;
   cursor: pointer;
 }
 html[dir] * {

@@ -34,7 +34,7 @@ function Card(props) {
                 <h4>{tranlate("Card.title")}</h4>
             </main>
             <footer className={styles.card__footer}>
-                <span>1 JD</span>
+                <span>1 {tranlate("Card.jd")}</span>
                 <div className={styles.card__footer__counter}>
                 <Button onClick={onRemoveClick} classList="red" text="-"></Button>
                     <span>{counter}</span>
