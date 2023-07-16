@@ -76,7 +76,7 @@ function Navbar() {
           <i class="fa fa-cart-plus"></i>
         </a>
 
-        <button className={Nav.btn}>Sign in</button>
+        <button className={Nav.btn}>{tranlate("Nav.sign-in")}</button>
 
         
       </div>

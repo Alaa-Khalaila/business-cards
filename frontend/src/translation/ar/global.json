@@ -3,7 +3,7 @@
         "logo":"لوجو",
         "Home":"الرئيسية",
         "contact":"تواصل معنا",
-        "about":"حولنا",
+        "about":"من نحن",
         "Terms & Conditions":"الشروط والاحكام",
         "sign-in":"تسجيل الدخول"
     },
@@ -13,12 +13,13 @@
         "button":"اطلب الان"
     },
     "About":{
-        "title":"نحن لوجو",
-        "text":"There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing  hidden in the middle of text. All",
+        "title":"نحن شركة فرصة العمر",
+        "text":"هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
         "button":"اقرأ المزيد"
     },
     "Card":{
-        "title":"بطاقة عمل"
+        "title":"بطاقة عمل",
+        "jd": "د.أ"
     },
     "Contact":{
         "title":"تواصل معنا",
@@ -28,7 +29,7 @@
          "message":"الرسالة",
          "button":"ارسل",
          "Get_in_Touch":"ابقى على اتصال",
-         "text":"Feel free to get in touch whith me. I'm always open ro discussing new projects, creative ideas or opportunities to be part of your visions.",
+         "text":"هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.",
          "location":"الاردن-عمان"
     },
     "Footer":{
@@ -36,7 +37,7 @@
         "location":"الموقع",
         "call":"اتصل",
         "logo":"لوجو",
-        "text":" Necessary, making this the first true generator on the Internet . It uses a dictionary of over 200 Latin words, combined with",
+        "text":" هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص.",
         "links":"الروابط",
         "home":"الرئيسية",
         "term":"الشروط والاحكام",
