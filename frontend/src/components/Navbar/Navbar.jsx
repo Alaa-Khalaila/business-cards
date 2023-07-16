@@ -28,6 +28,12 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <div className={Nav.sign}>
+        <a href="" className={Nav.icon}>
+          <i class="fa fa-cart-plus"></i>
+        </a>
+        <button className={Nav.btn}>Sign in</button>
+      </div>
     </nav>
   );
 }
