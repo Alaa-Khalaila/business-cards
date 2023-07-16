@@ -23,11 +23,11 @@ function Contact() {
               </div>
               <div className={cont.information}>
                 <img src={envelope} alt="email" className={cont.icon} />
-                <p>xxxx@gmail.com</p>
+                <p>test@gmail.com</p>
               </div>
               <div className={cont.information}>
                 <img src={phone} alt="phone" className={cont.icon} />
-                <p>+962 70000000</p>
+                <p>0786577777</p>
               </div>
             </div>
           </div>
