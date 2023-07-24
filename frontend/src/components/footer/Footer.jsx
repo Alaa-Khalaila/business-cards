@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import style from "./footer.module.css";
 import logo from "../../images/logo.png"
+import { NavLink, Outlet } from "react-router-dom";
 
 export const Footer = () => {
   const [translate] = useTranslation("global");
@@ -56,7 +57,9 @@ export const Footer = () => {
             <h4>{translate("Footer.links")}</h4>
             <div className={style.footer_link}>
               <a href="#">{translate("Footer.home")}</a>
-              <a href="">{translate("Footer.term")}</a>
+              <NavLink to="terms" href="">
+                {translate("Footer.term")}
+                </NavLink>
               <a href="#about">{translate("Footer.about")}</a>
             </div>
           </div>

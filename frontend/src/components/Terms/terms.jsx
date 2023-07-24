@@ -7,101 +7,17 @@ function Terms() {
     <div className={term.cont}>
       <Navbar style="backGroung" />
 
-      <section className="container" dir="rtl">
-        <ol>
-          <li>
-            <h3> تجميع المعلومات واستعمالها:</h3>
-            نحن نقوم بتجميع عدد كبير من المعلومات المتنوعة لغايات مختلفة وذلك
-            لتقديم الخدمات المتاحة على الموقع لك وتحسينها وتشمل على سبيل المثال
-            لا الحصر:
-            <ul>
-              <li>البريد الإلكتروني.</li>
-              <li>الاسم الأول والاسم الأخير.</li>
-              <li>رقم الهاتف.</li>
-              <li>العنوان، والمنطقة، والمحافظة، والرمز البريدي، والمدينة.</li>
-              <li>الكوكيز وبيانات الاستعمال.</li>
-              <li>
-                البيانات من الشبكات الاجتماعية إذا كنت تستخدم حسابات الشبكة
-                الاجتماعية الخاصة بك للتسجيل وإنشاء حساب في الموقع، ومن
-                المعلومات المستخدمة من مواقع الشبكات الاجتماعية مثل Facebook و
-                Google+ و Twitter ما يلي:
-                <ul>
-                  <li>اسمك</li>
-                  <li>اسم المستخدم للشبكة الاجتماعية.</li>
-                  <li>الموقع</li>
-                  <li>الجنس</li>
-                  <li>تاريخ الميلاد.</li>
-                  <li>عنوان البريد الإلكتروني.</li>
-                  <li>صورة الملف الشخصي.</li>
-                  <li>
-                    البيانات العامة لجهات الاتصال وذلك إذا قمت بتوصيل حسابك أو
-                    تسجيل الدخول للحصول على حساب في الخدمة باستخدام حساباتك في
-                    هذه الشبكات الاجتماعية.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            قد نستخدم معلوماتك الشخصية لإيصالك بالخدمات والمواد الإعلانية
-            والترويجية ومعلومات أخرى أيًّا كان نوعها، والتي قد تكون من ضمن
-            اهتماماتك سواء تم تطويرها من قبلنا لوحدنا أو من قبل أطراف ثالثة أو
-            بالتعاون فينا بيننا وبين أي طرف ثالث.
-          </li>
-          <br />
+      <section className="container" dir="ltr">
 
-          <li>
-            <h3> بيانات الاستعمال:</h3>
-            <br />
+            <h3>1.1 Eligibility.</h3>
+            Only businesses (including sole proprietors) and non-profit organizations located in the United States are eligible to apply for a Lifetime Opportunity Account and use the Services. Lifetime Opportunity and its Affiliates may provide Services to you or your Affiliates in other countries or regions under separate agreements. You and your Representative must not attempt to create a Lifetime Opportunity Account on behalf of or for the benefit of a user whose use of the Lifetime Opportunity services was suspended or terminated by Lifetime Opportunity, unless Lifetime Opportunity approves otherwise.
+            <h3>1.2 Business Representative.</h3>
+            You and your Representative individually affirm to Lifetime Opportunity that (a) your Representative is authorized to provide User Information on your behalf and to bind you to this Agreement; and (b) your Representative is an executive officer, senior manager or otherwise has significant responsibility for the control, management or direction of your business. Lifetime Opportunity may require you or your Representative to provide additional information or documentation demonstrating your Representative’s authority.
+            <h3>1.3 Sole Proprietors.</h3>
+            If you are a sole proprietor, you and your Representative also affirm that your Representative is personally responsible and liable for your use of the Services and your obligations to Customers, including payment of amounts you owe under this Agreement.
+            <h3>1.4 Age Requirements.</h3>
+            If you are a sole proprietor, and you are not old enough to enter into a contract on your own behalf (which is commonly but not always 18 years old), but you are 13 years old or older, your Representative must be your parent or legal guardian. If you are a legal entity that is owned, directly or indirectly, by an individual who is not old enough to enter into a contract on their own behalf, but the individual is 13 years old or older, your Representative must obtain the consent of either your board or an authorized officer. The approving board, authorized officer, parent or legal guardian is responsible to Lifetime Opportunity and is legally bound to this Agreement as if it had agreed to this Agreement itself. You must not use the Services if you are under 13 years of age.
 
-            <p>
-              قد نعمل على تجميع المعلومات التي يقوم المتصفح الخاص بك ب‘رسالها
-              عندما تقوم بزيارة الموقع أو دخولك له من خلال أو بواسطة جهاز هاتف
-              نقال.
-              <br />
-              بيانات الاستعمال هذه قد تتضمن معلومات مثل: معلومات عنوان الإنترنت،
-              والبروتوكول لجهاز حاسوبك، ونوع المتصفح، وإصدار المتصفح، وصفحات
-              الموقع التي تقوم بزيارتها، ووقت وتاريخ زيارتك لها، والوقت الذي
-              استغرقته على هذه الصفحات، ومعرفات الجهاز النادرة وغيرها من
-              البيانات التشخيصية.
-              <br />
-              وعندما تقوم بالدخول للموقع من خلال جهاز هاتف محمول، قد تتضمن
-              بيانات الاستعمال هذه معلومات مثل نوع جهاز الهاتف المحمول الذي
-              تستعمله، ومعرف الهاتف الفريد الخاص بهاتفك المحمول، وعنوان الإنترنت
-              والبروتوكول الخاص بهاتفك المحمول، ونوع متصفح الإنترنت عبر الهاتف
-              المحمول المستعمل من قبلك ومعرفات الجهاز النادرة وغيرها من البيانات
-              التشخيصية.
-            </p>
-          </li>
-          <li>
-            <h3> بيانات الموقع الجغرافي:</h3>
-            <br />
-            <p>
-              قد نستعمل ونخزن معلومات عن موقعك إذا قمت بالسماح لنا بالقيام بذلك،
-              ونستعمل هذه البيانات لتقديم مميزات متعلقة بخدمتنا ولتحسين الخدمة
-              وتكييفها تبعًا لذلك، ويمكنكِ تفعيل أو عدم تفعيل خدمات الموقع
-              الجغرافي عند استعمالك للخدمة بأي وقت من خلال إعدادات جهازك.
-            </p>
-            <br />
-          </li>
-          <li>
-            <h3> بيانات الكوكيز والتتبع:</h3>
-            <p>
-              نحن نقوم باستعمال الكوكيز وتكنولوجيا تتبع مماثلة لتتبع النشاط على
-              الموقع و نقوم بالاحتفاظ بمعلومات معينة.
-              <br />
-              وتُعرف الكوكيز على أنّها ملفات تحتوي على بيانات قليلة وقد تتضمن
-              أدوات تعريف نادرة وغامضة، ويتم إرسال الكوكيز للمتصفح الخاص بك من
-              الموقع الإلكتروني ويتم تخزينها على جهازك، ليتم استعمال تكنولوجيا
-              تتبع من أنواع أخرى مثل البيكونات والعلامات المميزة والنصوص وذلك
-              لغايات تجميع المعلومات وتتبعها وتطوير الخدمات وتحليلها.
-              <br />
-              بإمكانك تقييد المتصفح الخاص بك ليقوم برفض الكوكيز أو ليقوم بتحديد
-              والإشارة إلى عملية إرسال كوكيز بأي حال من الأحوال، إذا كنت لا
-              توافق على الكوكيز فإنك قد لا تتمكن من استعمال أجزاء معينة من
-              الموقع.
-            </p>
-            <br />
-          </li>
-        </ol>
       </section>
       <Footer />
     </div>

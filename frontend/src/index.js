@@ -10,7 +10,7 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "en",
+  lng: "ar",
   resources: {
     en: {
       global: global_en,

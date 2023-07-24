@@ -13,7 +13,7 @@ function Navbar() {
   const [tranlate, i18n] = useTranslation("global");
   const [active, setActive] = useState(false);
   const [toggleNav, setToggleNav] = useState(false);
-  const [isEnglish,setIsEnglish] = useState(false)
+  const [isEnglish,setIsEnglish] = useState(true)
   const location = useLocation();
   let obj = toggleNav ? { display: "flex" } : {};
   useEffect(() => {
@@ -58,9 +58,7 @@ function Navbar() {
 
 
               <li>
-                <NavLink to="terms" href="">
-                {tranlate("Nav.Terms & Conditions")}
-                </NavLink>
+                <a href="#cards">{tranlate("Nav.cards")}</a>
               </li>
 
           <li>
