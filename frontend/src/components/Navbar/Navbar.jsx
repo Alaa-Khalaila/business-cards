@@ -7,13 +7,14 @@ import cancel from "../../images/cancel.png";
 import CartContext from "../../CartContex";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
-import logo from "../../images/logo.png"
+import logo from "../../images/logo.png";
+// import { withRouter } from "react-router-dom";
 
 function Navbar() {
   const [tranlate, i18n] = useTranslation("global");
   const [active, setActive] = useState(false);
   const [toggleNav, setToggleNav] = useState(false);
-  const [isEnglish,setIsEnglish] = useState(true)
+  const [isEnglish, setIsEnglish] = useState(true);
   const location = useLocation();
   let obj = toggleNav ? { display: "flex" } : {};
   useEffect(() => {
@@ -21,25 +22,23 @@ function Navbar() {
       setActive(true);
     }
   }, []);
-
   const { items } = useContext(CartContext);
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    if(!isEnglish){
+    if (!isEnglish) {
       document.querySelector("html").setAttribute("dir", "rtl");
-    }else{
-      document.querySelector("html").removeAttribute("dir")
+    } else {
+      document.querySelector("html").removeAttribute("dir");
     }
-    setIsEnglish(!isEnglish)
-   
+    setIsEnglish(!isEnglish);
   };
 
   return (
     <>
-      <div>
+      <div className={Nav.all}>
         <nav
-          className={`${Nav.navbar} ${active ? Nav.active : ""}`}
+          className={`${Nav.navbar} ${active ? Nav.active : ""} container`}
           style={obj}
         >
           <img className={Nav.logo} src={logo} alt="" />
@@ -47,38 +46,42 @@ function Navbar() {
             <ul className={Nav.list}>
               <li>
                 <NavLink to="/" className={Nav.home} href="">
-                {tranlate("Nav.Home")}
+                  {tranlate("Nav.Home")}
                 </NavLink>
               </li>
 
-
-          <li>
-            <a href="#about">{tranlate("Nav.about")}</a>
-          </li>
-
+              <li>
+                <a href="#about">{tranlate("Nav.about")}</a>
+              </li>
 
               <li>
                 <a href="#cards">{tranlate("Nav.cards")}</a>
               </li>
 
-          <li>
-            <a href="#contact">{tranlate("Nav.contact")}</a>
-          </li>
-        </ul>
-      </div>
-      <div className={Nav.sign}>
-      {!isEnglish? <i onClick={() => changeLanguage("ar")} class="fa fa-globe"></i>:""}
-        {isEnglish? <i onClick={() => changeLanguage("en")} class="fa fa-globe"></i>:""}
-        <a href="" className={Nav.icon}>
-          {items?<span className={Nav.cart}>{items}</span>:""}
-          <i class="fa fa-cart-plus"></i>
-        </a>
+              <li>
+                <a href="#contact">{tranlate("Nav.contact")}</a>
+              </li>
+            </ul>
+          </div>
+          <div className={Nav.sign}>
+            {!isEnglish ? (
+              <i onClick={() => changeLanguage("ar")} class="fa fa-globe"></i>
+            ) : (
+              ""
+            )}
+            {isEnglish ? (
+              <i onClick={() => changeLanguage("en")} class="fa fa-globe"></i>
+            ) : (
+              ""
+            )}
+            <a href="" className={Nav.icon}>
+              {items ? <span className={Nav.cart}>{items}</span> : ""}
+              <i class="fa fa-cart-plus"></i>
+            </a>
 
-        <button className={Nav.btn}>{tranlate("Nav.sign-in")}</button>
-
-        
-      </div>
-      </nav>
+            <button className={Nav.btn}>{tranlate("Nav.sign-in")}</button>
+          </div>
+        </nav>
       </div>
       {!toggleNav && (
         <img

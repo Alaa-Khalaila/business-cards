@@ -6,7 +6,7 @@
   height: 100vh;
 }
 .paragh {
-  padding: 24% 0 0 0;
+  padding: 100px 0 0 0;
   color: var(--white);
   /* max-width: 50%; */
   display: flex;

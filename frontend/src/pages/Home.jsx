@@ -10,8 +10,8 @@ import card4 from "../images/4.png";
 import card5 from "../images/5.png";
 import card6 from "../images/6.png";
 import card7 from "../images/7.jpeg";
-import card8 from "../images/8.jpeg"
-import card9 from "../images/9.jpeg"
+import card8 from "../images/8.jpeg";
+import card9 from "../images/9.jpeg";
 
 function Home() {
   const cards = [
@@ -49,7 +49,6 @@ function Home() {
       <Cards cards={cards}></Cards>
       <About></About>
       <Contact></Contact>
-      <Footer></Footer>
     </>
   );
 }
