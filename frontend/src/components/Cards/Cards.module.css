@@ -5,17 +5,8 @@
   list-style: none;
   padding: 75px 0 40px 0;
 }
-.conditions{
-  display: flex;
-  margin-top: 25px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  font-size: 20px;
-}
 
-.conditions div{
+.conditions div {
   max-width: 65%;
   text-align: center;
 }

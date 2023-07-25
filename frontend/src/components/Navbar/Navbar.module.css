@@ -5,7 +5,6 @@
   width: 100%;
   top: 0;
   padding: 20px 0;
-  z-index: 1;
   background-color: black;
 }
 .image {
@@ -77,7 +76,7 @@
     height: 100vh;
     background-color: var(--primary);
     justify-content: unset;
-    position: absolute;
+    z-index: 1;
   }
   .list {
     flex-direction: column;
@@ -96,6 +95,7 @@
     position: absolute;
     right: 20px;
     top: 20px;
+    z-index: 1;
   }
   .container {
     display: none;
