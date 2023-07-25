@@ -8,7 +8,7 @@ function Cards(props){
   const [tranlate] = useTranslation("global");
     const listItems = props.cards.map((card) =>
     <li>
-      <Card title={card.title} description={card.description} img={card.img}></Card>
+      <Card card={card}></Card>
     </li>
   );
     return(
