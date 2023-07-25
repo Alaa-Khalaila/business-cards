@@ -6,6 +6,16 @@
   gap: 20px;
   margin-top: 60px;
 }
+
+@media screen and (max-width: 600px) {
+  .filterItem {
+    gap: 0;
+  }
+  .filterItem button{
+    padding: 6px 15px !important;
+  }
+}
+
 .conditions {
   display: flex;
   margin-top: 25px;
