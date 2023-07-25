@@ -1,8 +1,9 @@
 import Navbar from "../Navbar/Navbar";
 import Footer from "../footer/Footer";
 import term from "./terms.module.css";
-
 function Terms() {
+  window.scrollTo(0, 0);
+
   return (
     <div className={term.cont}>
       <section className="container" dir="ltr">

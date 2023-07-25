@@ -64,9 +64,7 @@
   border-radius: 50px;
   font-size: 1rem;
 }
-.active {
-  background-color: var(--primary);
-}
+
 .menu,
 .cancel {
   display: none;
@@ -79,12 +77,12 @@
     height: 100vh;
     background-color: var(--primary);
     justify-content: unset;
-    padding: 80px;
+    position: absolute;
   }
   .list {
     flex-direction: column;
     text-align: center;
-    padding: 45% 0;
+    padding: 20% 0;
     font-size: 2rem;
   }
   .list li {

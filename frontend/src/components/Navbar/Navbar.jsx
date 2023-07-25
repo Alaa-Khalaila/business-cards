@@ -12,11 +12,16 @@ import logo from "../../images/logo.png";
 
 function Navbar() {
   const [tranlate, i18n] = useTranslation("global");
+  const [active, setActive] = useState(false);
   const [toggleNav, setToggleNav] = useState(false);
   const [isEnglish, setIsEnglish] = useState(true);
   const location = useLocation();
   let obj = toggleNav ? { display: "flex" } : {};
-
+  useEffect(() => {
+    if (location.pathname === "/terms") {
+      setActive(true);
+    }
+  }, []);
   const { items } = useContext(CartContext);
 
   const changeLanguage = (lang) => {
@@ -32,7 +37,10 @@ function Navbar() {
   return (
     <>
       <div className={Nav.all}>
-        <nav className={`${Nav.navbar} container`}>
+        <nav
+          className={`${Nav.navbar} ${active ? Nav.active : ""} container`}
+          style={obj}
+        >
           <img className={Nav.logo} src={logo} alt="" />
           <div className="left">
             <ul className={Nav.list}>
