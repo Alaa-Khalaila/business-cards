@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   width: 100%;
   top: 0;
   padding: 20px 0;
+  z-index: 1;
+  background-color: black;
 }
 .image {
   width: 15%;
@@ -32,7 +33,9 @@
   margin-top: 4px;
   transition: width 0.3s;
 }
-
+.all {
+  background-color: black;
+}
 .list a:hover::after {
   width: 100%;
 }
@@ -121,16 +124,16 @@
   left: -5px;
 }
 
-.sign{
+.sign {
   display: flex;
   align-items: center;
-  gap: 12px
+  gap: 12px;
 }
 
-.logo{
+.logo {
   height: 100px;
 }
 
-html[dir] .sign{
+html[dir] .sign {
   flex-direction: row-reverse;
 }
