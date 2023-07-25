@@ -78,8 +78,9 @@ function Navbar() {
               {items ? <span className={Nav.cart}>{items}</span> : ""}
               <i class="fa fa-cart-plus"></i>
             </a>
-
-            <button className={Nav.btn}>{tranlate("Nav.sign-in")}</button>
+            <NavLink to="/register">
+              <button className={Nav.btn}>{tranlate("Nav.sign-in")}</button>
+            </NavLink>
           </div>
         </nav>
       </div>
