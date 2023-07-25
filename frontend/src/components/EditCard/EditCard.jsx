@@ -1,12 +1,14 @@
 import styles from "./EditCard.module.css";
 import jo from "../../images/jo.png";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Button from "../Button/Button";
 import CartContext from "../../CartContex";
 import { NavLink } from "react-router-dom";
 
 function EditCard() {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const { addToCart } = useContext(CartContext);
   const nameHandler = (e) => {
