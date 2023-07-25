@@ -120,4 +120,7 @@ text-transform: uppercase;
     .all form{
         padding-top: 40px;
     }
+    .upper{
+        margin: 0;
+    }
   }
