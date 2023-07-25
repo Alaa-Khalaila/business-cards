@@ -5,11 +5,7 @@ import logo from "../../images/mit_logo.png";
 function Cards(props) {
   const listItems = props.cards.map((card) => (
     <li>
-      <Card
-        title={card.title}
-        description={card.description}
-        img={card.img}
-      ></Card>
+      <Card card={card}></Card>
     </li>
   ));
   return (

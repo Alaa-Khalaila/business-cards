@@ -7,6 +7,7 @@ import { CartProvider } from "./CartContex";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import EditCard from "./components/EditCard/EditCard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="terms" element={<Terms />} />
+          <Route path="/card/:id" element={<EditCard />} />
         </Routes>
         <Footer />
       </BrowserRouter>

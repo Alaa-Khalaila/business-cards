@@ -47,3 +47,7 @@ html {
 html[dir] *:not(i){
   font-family: "Noto Kufi Arabic", sans-serif;
 }
+
+.mt-2{
+  margin-top: 44px;
+}

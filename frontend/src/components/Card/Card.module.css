@@ -46,6 +46,10 @@
     gap: 6px;
 }
 
+.card__footer__counter div{
+    border-radius: 6px;
+}
+
 .test{
     background-color: green;
 }

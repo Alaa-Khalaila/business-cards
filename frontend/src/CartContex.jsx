@@ -6,9 +6,9 @@ export function CartProvider({ children }) {
 
     const [items, setItems] = useState(0)
 
-    const addToCart = () => {
-        const newItems = items + 1
-        setItems(newItems)
+    const addToCart = (num) => {
+        const currentNum = items
+        setItems(num + currentNum)
     }
 
     const removeFromCart = () => {
