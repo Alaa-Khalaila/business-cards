@@ -20,16 +20,16 @@ import { useTranslation } from "react-i18next";
 function Home() {
   const cards = [
     { id: 1, img: card7, category: "اعلام" },
-    { id: 2, img: card2, category: "اعمال" },
-    { id: 3, img: card3, category: "اعلام" },
+    { id: 2, img: card2, category: "حرف" },
+    { id: 3, img: card3, category: "اعمال" },
     { id: 4, img: card4, category: "حرف" },
-    { id: 5, img: card6, category: "اعلام" },
-    { id: 6, img: card9, category: "اعمال" },
+    { id: 5, img: card6, category: "اعمال" },
+    { id: 6, img: card9, category: "اعلام" },
     { id: 7, img: card1, category: "اعمال" },
-    { id: 8, img: card8, category: "حرف" },
-    { id: 9, img: card5, category: "اعلام" },
+    { id: 8, img: card8, category: "اعلام" },
+    { id: 9, img: card5, category: "حرف" },
   ];
-  const [active, setActive] = useState();
+  const [active, setActive] = useState("الكل");
   const [tranlate] = useTranslation("global");
   const [data, setData] = useState(cards);
   const [collection, setCollection] = useState([]);
@@ -42,6 +42,7 @@ function Home() {
   const FilterItems = (itemData) => {
     const filterData = cards.filter((item) => item.category == itemData);
     setData(filterData);
+    setActive(itemData)
   };
 
   return (
@@ -54,10 +55,11 @@ function Home() {
             <div> {tranlate("Cards.conditions")}</div>
           </div>
           <ul className={home.filterItem}>
-            <li>
-              <button
+            <li >
+              <button className={active==="الكل"? home.active:''}
                 onClick={() => {
                   setData(cards);
+                  setActive("الكل")
                 }}
               >
                 الكل
@@ -69,6 +71,7 @@ function Home() {
                   onClick={() => {
                     FilterItems(item);
                   }}
+                  className={active===item? home.active:''}
                 >
                   {item}
                 </button>

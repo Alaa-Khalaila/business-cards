@@ -4,7 +4,7 @@
   justify-content: center;
   list-style: none;
   gap: 20px;
-  margin: 30px;
+  margin-top: 60px;
 }
 .conditions {
   display: flex;
@@ -22,4 +22,10 @@
   padding: 10px 25px;
   border-radius: 50px;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.filterItem button.active{
+  background: var(--primary);
+  color: var(--white);
 }
