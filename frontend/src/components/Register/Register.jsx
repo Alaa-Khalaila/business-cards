@@ -1,41 +1,69 @@
-import cont from "./Register.module.css";
+import register from "./Register.module.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Register() {
+  const [tranlate, i18n] = useTranslation("global");
+  const [isEnglish, setIsEnglish] = useState(true);
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    if (!isEnglish) {
+      document.querySelector("html").setAttribute("dir", "rtl");
+    } else {
+      document.querySelector("html").removeAttribute("dir");
+    }
+    setIsEnglish(!isEnglish);
+  };
+
   return (
-    <section id="contact" dir="ltr">
-      <div className={cont.all}>
-        <div className={cont.form}>
-          <div className={cont.contactInfo}>
-            <h3 className={cont.infoTitle}>Register</h3>
-            <div className={cont.inputContainer}>
-              <label>Phone</label>
-              <input type="tel" name="phone" className={cont.input} />
+    <section id="contact">
+      <div className={register.all}>
+        <div className={register.form}>
+          <div className={register.contactInfo}>
+            <h3 className={register.infoTitle}>{tranlate("Register.title")}</h3>
+            <div className={register.inputContainer}>
+              <label>{tranlate("Register.phone")}</label>
+              <input type="tel" name="phone" className={register.input} />
             </div>
-            <div className={cont.inputContainer}>
-              <label>Password</label>
+            <div className={register.inputContainer}>
+              <label>{tranlate("Register.email")}</label>
+
+              <input type="email" name="email" className={register.input} />
+            </div>
+            <div className={register.inputContainer}>
+              <label>{tranlate("Register.Password")}</label>
 
               <input
                 type="password"
                 name="password"
-                className={cont.input}
+                className={register.input}
                 placeholder="Enter your password"
               />
             </div>
-            <div className={cont.inputContainer}>
-              <label>Confirm password</label>
+            <div className={register.inputContainer}>
+              <label>{tranlate("Register.conPassword")}</label>
 
-              <input type="password" name="password" className={cont.input} />
+              <input
+                type="password"
+                name="password"
+                className={register.input}
+              />
             </div>
-            <input type="submit" value="submit" className={cont.contactBtn} />
-            <p className={cont.have}>
-              You have an account? <NavLink to="/login">sign in </NavLink>
+
+            <input
+              type="submit"
+              value={tranlate("Register.btn")}
+              className={register.contactBtn}
+            />
+            <p className={register.have}>
+              {tranlate("Register.have")}
+              <NavLink to="/login">{tranlate("Register.sign")}</NavLink>
             </p>
           </div>
-          <div className={cont.contactForm}>
-            <p className={cont.hello}>
-              Hello! Welcome to the Lifetime Opportunity
-            </p>
+          <div className={register.contactForm}>
+            <p className={register.hello}>{tranlate("Register.hello")}</p>
           </div>
         </div>
       </div>

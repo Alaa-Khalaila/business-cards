@@ -46,7 +46,7 @@
 }
 .inputContainer {
   position: relative;
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
 }
 
 .input {
@@ -59,7 +59,7 @@
   letter-spacing: 0.7px;
   border-radius: 25px;
   transition: 1.3s;
-  margin-top: 0.5em;
+  margin-top: 0.4em;
 }
 
 .inputContainer label {
@@ -73,7 +73,7 @@
   font-weight: 400;
 }
 .contactBtn {
-  padding: 0.8rem 1.3rem;
+  padding: 0.7rem 1.2rem;
   width: 100%;
   background-color: var(--primary);
   border: 2px solid var(--primary);
