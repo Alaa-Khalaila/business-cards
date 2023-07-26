@@ -59,7 +59,7 @@ function Register() {
             />
             <p className={register.have}>
               {tranlate("Register.have")}
-              <NavLink to="/login">{tranlate("Register.sign")}</NavLink>
+              <NavLink to="/Login">{tranlate("Register.sign")}</NavLink>
             </p>
           </div>
           <div className={register.contactForm}>

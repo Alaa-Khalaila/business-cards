@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import EditCard from "./components/EditCard/EditCard";
 import Register from "./components/Register/Register";
+import Login from "./components/logIn/Login";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="terms" element={<Terms />} />
           <Route path="/card/:id" element={<EditCard />} />
           <Route path="Register" element={<Register />} />
+          <Route path="Login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

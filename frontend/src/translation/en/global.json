@@ -59,5 +59,14 @@
     "have": "You have an account?",
     "sign": "log in",
     "hello": "Hello! Welcome to the Lifetime Opportunity"
+  },
+  "Login": {
+    "title": "Log in",
+    "phone": "Phone",
+    "Password": "Password",
+    "btn": "submit",
+    "have": "You don't have an account?   ",
+    "sign": "sign up",
+    "hello": "Hello! Welcome to the Lifetime Opportunity"
   }
 }
