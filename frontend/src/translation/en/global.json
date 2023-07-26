@@ -20,7 +20,8 @@
     },
     "Card":{
         "title":"Business Card",
-        "jd":"JD"
+        "jd":"JD",
+        "Edit-Card":"Edit Card"
     },
     "Cards":{
         "conditions":"This competition is subject to the regulations of the Ministry of Industry, Commerce, and Supply."

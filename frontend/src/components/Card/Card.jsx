@@ -40,7 +40,7 @@ function Card(props) {
                 {/* <Button onClick={onRemoveClick} classList="red" text="-"></Button>
                     <span>{counter}</span>
                     <Button onClick={onAddClick} classList="yellow" text="+"></Button> */}
-                    <NavLink to={"card/"+props.card.id}><Button classList="yellow" text="Edit Card"></Button></NavLink>
+                    <NavLink to={"card/"+props.card.id}><Button classList="yellow" text={tranlate("Card.Edit-Card")}></Button></NavLink>
                 </div>
 
             </footer>

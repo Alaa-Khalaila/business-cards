@@ -34,7 +34,7 @@ function Contact() {
           <div className={cont.contactForm}>
             <span className={cont.circle}></span>
             <span className={cont.circle}></span>
-            <form>
+            <form className={cont.formDetails}>
               <h3 className={cont.formTitile}>{translate("Contact.title")}</h3>
               <div className={cont.inputContainer}>
                 <input
