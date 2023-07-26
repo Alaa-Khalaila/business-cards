@@ -1,0 +1,13 @@
+.cart__item{
+    display: flex;
+    border-bottom: 1px solid silver;
+    padding-top: 20px;
+}
+
+.cart__item > div {
+    width: 25%;
+}
+
+.cart__item__img{
+    width:90%;
+}

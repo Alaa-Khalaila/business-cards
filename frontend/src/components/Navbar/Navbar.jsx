@@ -74,10 +74,10 @@ function Navbar() {
             ) : (
               ""
             )}
-            <a href="" className={Nav.icon}>
+            <NavLink to="/cart" className={Nav.icon}>
               {items ? <span className={Nav.cart}>{items}</span> : ""}
               <i class="fa fa-cart-plus"></i>
-            </a>
+            </NavLink>
             <NavLink to="/register">
               <button className={Nav.btn}>{tranlate("Nav.sign-in")}</button>
             </NavLink>
