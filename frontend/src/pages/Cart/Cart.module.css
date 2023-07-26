@@ -1,0 +1,20 @@
+.cart__container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cart__title {
+    padding: 100px 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.cart__table__titles{
+display: flex;
+padding: 30px 0;
+border-bottom: 1px solid silver;
+}
+
+.cart__table__titles > div{
+    width: 25%;
+}
+

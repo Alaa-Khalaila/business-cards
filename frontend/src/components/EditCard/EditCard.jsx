@@ -3,9 +3,10 @@ import jo from "../../images/jo.png";
 import { useState, useContext, useEffect } from "react";
 import Button from "../Button/Button";
 import CartContext from "../../CartContex";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 function EditCard() {
+  const {id} = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -147,7 +148,7 @@ function EditCard() {
           <Button
             classList={styles.add + " yellow"}
             text="اضف الى السلة"
-            onClick={() => addToCart(counter)}
+            onClick={() => addToCart(counter,id)}
           ></Button>
         </NavLink>
       </form>
