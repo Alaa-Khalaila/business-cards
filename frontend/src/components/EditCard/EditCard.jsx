@@ -4,9 +4,14 @@ import { useState, useContext, useEffect } from "react";
 import Button from "../Button/Button";
 import CartContext from "../../CartContex";
 import { NavLink, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function EditCard() {
   const {id} = useParams();
+
+
+function EditCard() {
+  const [translate] = useTranslation("global");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -30,7 +35,7 @@ function EditCard() {
   const locationHandler = (e) => {
     setLocation(e.target.value);
   };
-  const [name, setName] = useState("YOUR NAME");
+  const [name, setName] = useState("Your Name");
   const [firstNum, setFirstNum] = useState("+962777777");
   const [secondNum, setSecondNum] = useState("+962888889");
   const [email, setEmail] = useState("test@gmail.com");
@@ -88,47 +93,51 @@ function EditCard() {
           </div>
         </div>
       </div>
-      <form dir="rtl">
+      <form dir="rtl" className={styles.formInfo}>
         <div>
-          <label htmlFor="firstNum">الاسم:</label>
+          <label htmlFor="firstNum">الاسم</label>
           <input
             onKeyUp={nameHandler}
             defaultValue={name}
             id="firstNum"
             type="text"
+            className={styles.input}
           />
         </div>
         <div>
-          <label htmlFor="firstNum">الرقم الاول:</label>
+          <label htmlFor="firstNum">الرقم الاول</label>
           <input
             onKeyUp={firstNumHandler}
             defaultValue={firstNum}
             id="firstNum"
             type="text"
+            className={styles.input}
           />
         </div>
         <div>
-          <label htmlFor="secondNum">الرقم الثاني:</label>
+          <label htmlFor="secondNum">الرقم الثاني</label>
           <input
             defaultValue={secondNum}
             type="text"
             onKeyUp={secondNumHandler}
+            className={styles.input}
           />
         </div>
-        <div>
-          <label htmlFor="secondNum">الموقع الالكتروني:</label>
-          <input defaultValue={site} type="text" onKeyUp={siteHandler} />
+        <div >
+          <label htmlFor="secondNum">الموقع الالكتروني</label>
+          <input defaultValue={site} type="text" onKeyUp={siteHandler} className={styles.input} />
         </div>
         <div>
-          <label htmlFor="secondNum">الايميل:</label>
-          <input defaultValue={email} type="text" onKeyUp={emailHandler} />
+          <label htmlFor="secondNum">الايميل</label>
+          <input defaultValue={email} type="text" onKeyUp={emailHandler} className={styles.input}/>
         </div>
         <div>
-          <label htmlFor="secondNum">الموقع:</label>
+          <label htmlFor="secondNum">الموقع</label>
           <input
             defaultValue={location}
             type="text"
             onKeyUp={locationHandler}
+            className={styles.input}
           />
         </div>
         <div>

@@ -91,11 +91,12 @@
 .btns {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 20px;
+  padding: 8px 0;
 }
 
 .all form > div {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .all form {
@@ -111,6 +112,27 @@
   display: inline;
   border-radius: 6px;
 }
+.input {
+  border-radius: 3%;
+  padding: 8px;
+  margin: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ecb153;
+  outline: 0;
+}
+.input:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 0.25rem rgba(235, 117, 14, 0.25);
+}
+.formInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.formInfo label {
+  font-size: 15px;
+}
+
 
 @media screen and (max-width: 600px) {
   .all {
