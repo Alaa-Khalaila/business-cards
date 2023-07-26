@@ -7,10 +7,7 @@ import { NavLink, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function EditCard() {
-  const {id} = useParams();
-
-
-function EditCard() {
+  const { id } = useParams();
   const [translate] = useTranslation("global");
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -123,13 +120,23 @@ function EditCard() {
             className={styles.input}
           />
         </div>
-        <div >
+        <div>
           <label htmlFor="secondNum">الموقع الالكتروني</label>
-          <input defaultValue={site} type="text" onKeyUp={siteHandler} className={styles.input} />
+          <input
+            defaultValue={site}
+            type="text"
+            onKeyUp={siteHandler}
+            className={styles.input}
+          />
         </div>
         <div>
           <label htmlFor="secondNum">الايميل</label>
-          <input defaultValue={email} type="text" onKeyUp={emailHandler} className={styles.input}/>
+          <input
+            defaultValue={email}
+            type="text"
+            onKeyUp={emailHandler}
+            className={styles.input}
+          />
         </div>
         <div>
           <label htmlFor="secondNum">الموقع</label>
@@ -157,7 +164,7 @@ function EditCard() {
           <Button
             classList={styles.add + " yellow"}
             text="اضف الى السلة"
-            onClick={() => addToCart(counter,id)}
+            onClick={() => addToCart(counter, id)}
           ></Button>
         </NavLink>
       </form>
