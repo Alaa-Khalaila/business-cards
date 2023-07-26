@@ -24,7 +24,10 @@ function Card(props) {
         <span>1 {tranlate("Card.jd")}</span>
         <div className={styles.card__footer__counter}>
           <NavLink to={"card/" + props.card.id}>
-            <Button classList="yellow" text="Edit Card"></Button>
+            <Button
+              classList="yellow"
+              text={tranlate("Card.Edit_Card")}
+            ></Button>
           </NavLink>
         </div>
       </footer>
