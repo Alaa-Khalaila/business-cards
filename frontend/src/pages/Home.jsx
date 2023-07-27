@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import home from "./Home.module.css";
 import logo from "../images/mit_logo.png";
 import { useTranslation } from "react-i18next";
-import {cards} from "../products"
+import { cards } from "../products";
 
 function Home() {
   const [active, setActive] = useState("الكل");
@@ -23,7 +23,7 @@ function Home() {
   const FilterItems = (itemData) => {
     const filterData = cards.filter((item) => item.category == itemData);
     setData(filterData);
-    setActive(itemData)
+    setActive(itemData);
   };
 
   return (
@@ -33,14 +33,15 @@ function Home() {
         <div>
           <div className={home.conditions}>
             <img src={logo} alt="" />
-            <div> {tranlate("Cards.conditions")}</div>
+            <div className={home.cond}> {tranlate("Cards.conditions")}</div>
           </div>
           <ul className={home.filterItem}>
-            <li >
-              <button className={active==="الكل"? home.active:''}
+            <li>
+              <button
+                className={active === "الكل" ? home.active : ""}
                 onClick={() => {
                   setData(cards);
-                  setActive("الكل")
+                  setActive("الكل");
                 }}
               >
                 الكل
@@ -52,7 +53,7 @@ function Home() {
                   onClick={() => {
                     FilterItems(item);
                   }}
-                  className={active===item? home.active:''}
+                  className={active === item ? home.active : ""}
                 >
                   {item}
                 </button>
