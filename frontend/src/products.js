@@ -24,4 +24,6 @@ export const cards = [
     { id: 13, img: card1, category: "حداد" },
     { id: 14, img: card1, category: "مهندس" },
     { id: 15, img: card4, category: "نجار" },
+    { id: 11, img: card2, category: "مهندس" },
+
   ];
