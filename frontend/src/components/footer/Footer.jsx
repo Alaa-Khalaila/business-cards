@@ -58,7 +58,7 @@ export const Footer = () => {
                 <NavLink to="/terms" href="">
                   {translate("Footer.term")}
                 </NavLink>
-                <a href="#about">{translate("Footer.about")}</a>
+                <NavLink to="/about">{translate("Footer.about")}</NavLink>
               </div>
             </div>
           </div>
