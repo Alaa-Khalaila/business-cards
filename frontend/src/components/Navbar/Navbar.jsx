@@ -56,7 +56,7 @@ function Navbar() {
               </li>
 
               <li>
-                <a href="/#cards">{tranlate("Nav.cards")}</a>
+                <NavLink to="/">{tranlate("Nav.cards")}</NavLink>
               </li>
 
               <li>
