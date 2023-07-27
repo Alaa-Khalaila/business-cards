@@ -301,7 +301,7 @@ function EditCard() {
           ""
         )}
       </div>
-      {id !== "7" || id !== 1 ? (
+      {(id !== "7" && id !== "1" )? (
         <div className={styles.not}>
           هذه البطاقه غير متوفرة يرجى اختيار بطاقة اخرى
         </div>

@@ -52,4 +52,11 @@ width: 100%;
   html[dir] .flex{
     flex-direction: row-reverse;
   }
+
+}
+@media screen and (min-width: 300px) {
+  .image{
+    width: 330px;
+  }
+
 }

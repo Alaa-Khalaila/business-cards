@@ -179,7 +179,7 @@
 }
 @media screen and (max-width: 400px) {
   .formInfo {
-    padding: 0 60px;
+    padding: 0  125px 0 15px
   }
 }
 @media screen and (max-width: 768px) {
