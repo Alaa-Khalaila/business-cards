@@ -4,7 +4,7 @@ import styles from "./CartItem.module.css";
 import Button from "../Button/Button";
 
 function CartItem(props) {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems,addToCart } = useContext(CartContext);
 
   return (
     <div className={styles.cart__item}>
@@ -19,9 +19,9 @@ function CartItem(props) {
       <div>1JD</div>
 
       <div className={styles.btns}>
-        <Button classList="red" text="-"></Button>
+        <Button classList="red" text="-" onClick={()=>addToCart(-1,props.product.id)}></Button>
         <span className={styles.qunt}>{cartItems[props.product.id]}</span>
-        <Button classList="yellow" text="+"></Button>
+        <Button classList="yellow" text="+" onClick={()=>addToCart(1,props.product.id)}></Button>
       </div>
 
       <div>{cartItems[props.product.id] + "JD"}</div>

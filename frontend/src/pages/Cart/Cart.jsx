@@ -9,18 +9,7 @@ import { NavLink } from "react-router-dom";
 
 function Cart() {
   const { cartItems, items } = useContext(CartContext);
-  const [tranlate, i18n] = useTranslation("global");
-  const [isEnglish, setIsEnglish] = useState(true);
-
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-    if (!isEnglish) {
-      document.querySelector("html").setAttribute("dir", "rtl");
-    } else {
-      document.querySelector("html").removeAttribute("dir");
-    }
-    setIsEnglish(!isEnglish);
-  };
+  const [tranlate] = useTranslation("global");
 
   return (
     <>
@@ -33,7 +22,7 @@ function Cart() {
             <div className={styles.cart__table__titles}>
               <div>{tranlate("Cart.card")}</div>
               <div>{tranlate("Cart.price")}</div>
-              <div>{tranlate("Cart.qunatity")}</div>
+              <div>{tranlate("Cart.quantity")}</div>
               <div>{tranlate("Cart.subTotal")}</div>
             </div>
             <div>
@@ -48,7 +37,7 @@ function Cart() {
             <div className={styles.title}>{tranlate("Cart.cartTitle")}</div>
             <div className={styles.price}>
               <div>{tranlate("Cart.subTotal")}</div>
-              <div>300JD</div>
+              <div>{items}JD</div>
             </div>
             <div>
               <button className={styles.btn}>{tranlate("Cart.btn")}</button>

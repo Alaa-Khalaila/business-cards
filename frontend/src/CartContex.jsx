@@ -20,9 +20,8 @@ export function CartProvider(props) {
     const currentNum = items;
     setItems(num + currentNum);
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+num}))
-    console.log(cartItems);
   };
-  
+
   return (
     <CartContext.Provider value={{ items, addToCart,cartItems }}>
       {props.children}
