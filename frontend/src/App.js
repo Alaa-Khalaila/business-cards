@@ -10,6 +10,9 @@ import EditCard from "./components/EditCard/EditCard";
 import Register from "./components/Register/Register";
 import Login from "./components/logIn/Login";
 import Cart from "./pages/Cart/Cart"
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Cards from "./components/Cards/Cards";
 
 function App() {
   return (
@@ -23,6 +26,8 @@ function App() {
           <Route path="Register" element={<Register />} />
           <Route path="Login" element={<Login />} />
           <Route path="/cart" element={<Cart/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
+          <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
