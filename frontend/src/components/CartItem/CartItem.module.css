@@ -9,6 +9,13 @@
   width: 25%;
 }
 
+
+
+@media screen and (max-width: 600px) {
+  .cart__item > div:last-child{
+    text-align: center;
+  }
+}
 .cart__item__img {
   width: 60%;
 }
