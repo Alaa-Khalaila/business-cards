@@ -11,7 +11,7 @@
   .filterItem {
     gap: 0;
   }
-  .filterItem button{
+  .filterItem button {
     padding: 6px 15px !important;
   }
 }
@@ -34,8 +34,10 @@
   font-size: 1.2rem;
   cursor: pointer;
 }
-
-.filterItem button.active{
+.cond {
+  text-align: center;
+}
+.filterItem button.active {
   background: var(--primary);
   color: var(--white);
 }
