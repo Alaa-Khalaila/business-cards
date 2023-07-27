@@ -69,5 +69,14 @@
     "have": "You don't have an account?   ",
     "sign": "sign up",
     "hello": "Hello! Welcome to the Lifetime Opportunity"
+  },
+  "Cart": {
+    "titleShop": "Shopping cart",
+    "card": "Card",
+    "price": "Price",
+    "qunatity": "Qunatity",
+    "subTotal": "Subtotal",
+    "cartTitle": "Cart totals",
+    "btn": "Proceed to checkout"
   }
 }
