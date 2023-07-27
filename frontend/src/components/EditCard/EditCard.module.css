@@ -25,7 +25,7 @@
   background-image: url("../../images/card_bg.webp");
 }
 
-.upper__7{
+.upper__7 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,17 +34,16 @@
   height: 250px;
   margin: 50px 0;
   background-image: url(../../images//1-2.png);
-  color: var(--white);;
+  color: var(--white);
   font-size: 28px;
   text-transform: uppercase;
-  
 }
 
 .upper__7 div {
-  font-family: 'Bitter', serif !important;
+  font-family: "Bitter", serif !important;
 }
 
-.lower__7{
+.lower__7 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,18 +52,18 @@
   background-image: url(../../images/1-1.png);
   padding: 86px 20px 28px 62px;
 }
-.lower__7__bot{
+.lower__7__bot {
   display: flex;
   gap: 75px;
   font-size: 10px;
 }
-.lower__7 h4{
+.lower__7 h4 {
   font-size: 24px;
   text-transform: uppercase;
-  font-family: 'Bitter', serif !important;
+  font-family: "Bitter", serif !important;
   margin-left: -30px;
 }
-.lower__7__bot__left > div{
+.lower__7__bot__left > div {
   margin-bottom: 4px;
 }
 .name {
@@ -174,13 +173,17 @@
 .formInfo label {
   font-size: 15px;
 }
+.not {
+  text-align: center;
+  padding: 100px;
+}
 @media screen and (max-width: 400px) {
-  .formInfo{
+  .formInfo {
     padding: 0 60px;
   }
 }
 @media screen and (max-width: 768px) {
-  .card{
+  .card {
     align-items: flex-start;
     padding: 10px;
   }
@@ -205,6 +208,4 @@
   .upper {
     margin: 0 0 20px 0;
   }
-
-  
 }
