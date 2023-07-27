@@ -32,8 +32,8 @@ function Home() {
       <div>
         <div>
           <div className={home.conditions}>
-            <img src={logo} alt="" />
-            <div className={home.cond}> {tranlate("Cards.conditions")}</div>
+            {/* <img src={logo} alt="" />
+            <div className={home.cond}> {tranlate("Cards.conditions")}</div> */}
           </div>
           <ul className={home.filterItem}>
             <li>

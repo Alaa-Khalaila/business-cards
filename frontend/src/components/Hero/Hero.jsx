@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Navbar from "../Navbar/Navbar";
 import heroStyle from "./Hero.module.css";
 import car from "../../images/car.png";
+import image from "../../images/image.png"
 
 function Hero() {
   const [tranlate] = useTranslation("global");
@@ -18,7 +19,7 @@ function Hero() {
               </button>
             </a>
           </div>
-          <img src={car} alt="" />
+          <img src={image} alt="" />
         </div>
       </div>
     </div>

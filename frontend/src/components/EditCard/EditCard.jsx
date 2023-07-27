@@ -169,10 +169,10 @@ function EditCard() {
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 ملاحظة: سيتم ارسال رمز خاص لكل بطاقة للدخول على السحب, ضاعف فرصة
                 ربحك للسيارة بشراء اكثر من بطاقة
-              </div>
+              </div> */}
               <NavLink to="/" className="mt-2">
                 <Button
                   classList={styles.add + " yellow"}
