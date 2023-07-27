@@ -49,3 +49,24 @@ html[dir] .total {
 html[dir] .cart {
   padding-left: 20px;
 }
+.emptyCart {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.emptyTitle {
+  font-size: 1.5rem;
+}
+.emptyImg {
+  padding: 10px;
+}
+.btnEmpty {
+  border: none;
+  padding: 15px;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}

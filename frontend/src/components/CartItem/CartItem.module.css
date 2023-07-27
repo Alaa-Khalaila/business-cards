@@ -1,13 +1,25 @@
-.cart__item{
-    display: flex;
-    border-bottom: 1px solid silver;
-    padding-top: 20px;
+.cart__item {
+  display: flex;
+  border-bottom: 1px solid silver;
+  padding-top: 20px;
+  align-items: center;
 }
 
 .cart__item > div {
-    width: 25%;
+  width: 25%;
 }
 
-.cart__item__img{
-    width:90%;
+.cart__item__img {
+  width: 60%;
+}
+.btn {
+  height: 30px;
+  border: none;
+  background-color: white;
+  padding: 5px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
