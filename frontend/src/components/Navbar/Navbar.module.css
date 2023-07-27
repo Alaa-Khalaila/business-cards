@@ -78,11 +78,15 @@
     justify-content: unset;
     z-index: 1;
   }
+  .t{
+    background-color: black;
+    height: 10vh;
+  }
   .list {
     flex-direction: column;
     text-align: center;
     padding: 20% 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .list li {
     padding: 0.4em;
@@ -102,7 +106,7 @@
   }
   .btn {
     height: unset;
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .icon i {
     font-size: 35px;

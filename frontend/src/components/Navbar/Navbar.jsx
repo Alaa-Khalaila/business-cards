@@ -51,15 +51,18 @@ function Navbar() {
               </li>
 
               <li>
-                <a href="#about">{tranlate("Nav.about")}</a>
+                {/* <a href="#about">{tranlate("Nav.about")}</a> */}
+                <NavLink to="/about">{tranlate("Nav.about")}</NavLink>
               </li>
 
               <li>
-                <a href="#cards">{tranlate("Nav.cards")}</a>
+                <a href="/#cards">{tranlate("Nav.cards")}</a>
               </li>
 
               <li>
-                <a href="#contact">{tranlate("Nav.contact")}</a>
+                <li>
+                  <NavLink to="/contact">{tranlate("Nav.contact")}</NavLink>
+                </li>
               </li>
             </ul>
           </div>
@@ -84,22 +87,24 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      {!toggleNav && (
-        <img
-          className={Nav.menu}
-          src={menu}
-          alt="menu"
-          onClick={() => setToggleNav(true)}
-        />
-      )}
-      {toggleNav && (
-        <img
-          className={Nav.cancel}
-          src={cancel}
-          alt="cancel"
-          onClick={() => setToggleNav(false)}
-        />
-      )}
+      <div className={Nav.t}>
+        {!toggleNav && (
+          <img
+            className={Nav.menu}
+            src={menu}
+            alt="menu"
+            onClick={() => setToggleNav(true)}
+          />
+        )}
+        {toggleNav && (
+          <img
+            className={Nav.cancel}
+            src={cancel}
+            alt="cancel"
+            onClick={() => setToggleNav(false)}
+          />
+        )}
+      </div>
     </>
   );
 }

@@ -11,12 +11,12 @@ import card9 from "./images/9.jpeg";
 
 export const cards = [
     { id: 1, img: card7, category: "اعلام" },
-    { id: 7, img: card1, category: "اعمال" },
-    { id: 2, img: card2, category: "حرف" },
-    { id: 3, img: card3, category: "اعمال" },
-    { id: 4, img: card4, category: "حرف" },
-    { id: 5, img: card6, category: "اعمال" },
+    { id: 7, img: card1, category: "رجال اعمال" },
+    { id: 2, img: card2, category: "اطباء" },
+    { id: 3, img: card3, category: "مهندسين" },
+    { id: 4, img: card4, category: "رجال اعمال" },
+    { id: 5, img: card6, category: "رجال اعمال" },
     { id: 6, img: card9, category: "اعلام" },
     { id: 8, img: card8, category: "اعلام" },
-    { id: 9, img: card5, category: "حرف" },
+    { id: 9, img: card5, category: "مهندسين" },
   ];
