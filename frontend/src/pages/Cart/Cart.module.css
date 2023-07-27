@@ -70,3 +70,12 @@ html[dir] .cart {
   border-radius: 25px;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .cart__container {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+  .cart__title {
+    padding: 50px 0 20px 0;
+  }
+}
