@@ -23,7 +23,7 @@ function Contact() {
               </div>
               <div className={cont.information}>
                 <img src={envelope} alt="email" className={cont.icon} />
-                <p>test@gmail.com</p>
+                <p>Info@petraoutsourcing.com</p>
               </div>
               <div className={cont.information}>
                 <img src={phone} alt="phone" className={cont.icon} />

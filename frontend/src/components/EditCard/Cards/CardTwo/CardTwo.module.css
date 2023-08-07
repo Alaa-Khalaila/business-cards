@@ -32,24 +32,32 @@
     width: 400px;
     height: 250px;
     margin: 50px 0;
-    background-image: url(../../../../images//2-2.jpeg);
+    background-image: url(../../../../images//2-1.jpeg);
     color: var(--white);
     font-size: 28px;
     text-transform: uppercase;
+  }
+
+  .upper div {
+    padding-top: 60px
   }
   .lower__bot {
     display: flex;
     gap: 75px;
     font-size: 10px;
+    padding-top: 38px;
+    min-height: 118px;
+  }
+  .lower__bot__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .lower h4 {
     font-size: 24px;
     text-transform: uppercase;
     font-family: "Bitter", serif !important;
     margin-left: -30px;
-  }
-  .lower__bot__left > div {
-    margin-bottom: 4px;
   }
   .upper div {
     font-family: "Bitter", serif !important;
@@ -58,10 +66,8 @@
   .lower {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 400px;
     height: 250px;
     background-image: url(../../../../images/2-2.jpeg);
-    padding: 86px 20px 28px 62px;
+    padding: 60px 20px 28px 62px;
   }
-

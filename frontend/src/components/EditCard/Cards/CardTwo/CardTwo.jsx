@@ -1,30 +1,33 @@
-import styles from "./CardTwo.module.css"
+import styles from "./CardTwo.module.css";
 
-const CardTwo = (props) =>{
-    return(
-        <>
-        <div className={styles.card} dir="ltr">
-          <div className={styles.upper}>
-            <div>{props.name}</div>
+const CardTwo = (props) => {
+  return (
+    <>
+      <div className={styles.card} dir="ltr">
+        <div className={styles.upper}>
+          <div>{props.name}</div>
+        </div>
+        <div className={styles.lower}>
+          <div>
+            <h4>{props.name}</h4>
           </div>
-          <div className={styles.lower}>
-            <div>
-              <h4>{props.name}</h4>
-            </div>
-            <div className={styles.lower__bot}>
-              <div className={styles.lower__bot__left}>
-                <div>{props.location}</div>
-                <div>{props.email}</div>
+          <div className={styles.lower__bot}>
+            <div className={styles.lower__bot__left}>
+              <div className={styles.section}>
+                <div>{props.firstNum}</div>
+                <div>{props.secondNum}</div>
               </div>
-              <div className={styles.lower__bot__left}>
-                <div>{props.firstNum + (props.secondNum ? " ," + props.secondNum : "")}</div>
+              <div className={styles.section}>
+                <div>{props.email}</div>
                 <div>{props.site}</div>
               </div>
+              <div className={styles.location}>{props.location}</div>
             </div>
           </div>
         </div>
-      </>
-    )
-}
+      </div>
+    </>
+  );
+};
 
 export default CardTwo;

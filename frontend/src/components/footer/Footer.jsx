@@ -24,7 +24,7 @@ export const Footer = () => {
                 </a>
                 <a href="mailto:email@email.de">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span>test@gmail.com</span>
+                  <span>Info@petraoutsourcing.com</span>
                 </a>
               </div>
             </div>
@@ -50,21 +50,24 @@ export const Footer = () => {
                   <i class="fa fa-pinterest" aria-hidden="true"></i>
                 </a>
               </div>
+              <div className={style.footer_copyright}>
+                <p> &copy; {translate("Footer.copyRight-1")}</p>
+              </div>
             </div>
             <div>
               <h4>{translate("Footer.links")}</h4>
               <div className={style.footer_link}>
-                <a href="/">{translate("Footer.home")}</a>
                 <NavLink to="/terms" href="">
                   {translate("Footer.term")}
                 </NavLink>
-                <NavLink to="/about">{translate("Footer.about")}</NavLink>
+                <NavLink to="/refund">{translate("Footer.refund")}</NavLink>
+                <NavLink to="/policy">{translate("Footer.policy")}</NavLink>
+                <div>
+                  <i class="fa fa-cc-visa"></i>
+                  <i class="fa fa-cc-mastercard"></i>
+                </div>
               </div>
             </div>
-          </div>
-          <div className={style.footer_copyright}>
-            <p> &copy; {translate("Footer.copyRight-1")}</p>
-            <p> &copy; {translate("Footer.copyRight-2")}</p>
           </div>
         </div>
       </div>

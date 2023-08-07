@@ -31,7 +31,7 @@
   padding: 5px;
   margin: 5px;
 }
-.social_icon{
+.social_icon {
   padding-top: 15px;
 }
 .social_icon a {
@@ -57,11 +57,18 @@ p {
 .footer_link a:hover {
   color: var(--secondary);
 }
-.footer_copyright{
+.footer_link i {
+  margin: 6px;
+  font-size: 36px;
+}
+.footer_copyright {
   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
-.footer_logo{
+.footer_logo {
   height: 100px;
   margin-top: -50px;
   margin-bottom: 10px;

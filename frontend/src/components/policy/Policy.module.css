@@ -1,0 +1,13 @@
+.cont {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .cont h3 {
+    margin: 24px 0 8px 0;
+  }
+  
+  .cont a {
+    text-decoration: underline;
+  }

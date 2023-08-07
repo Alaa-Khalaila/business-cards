@@ -13,6 +13,8 @@ import Cart from "./pages/Cart/Cart"
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Cards from "./components/Cards/Cards";
+import Refund from "./components/return/Refund";
+import Policy from "./components/policy/Policy";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/cart" element={<Cart/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/refund" element={<Refund/>}></Route>
+          <Route path="/policy" element={<Policy/>}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
