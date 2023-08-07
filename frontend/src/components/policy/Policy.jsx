@@ -9,15 +9,14 @@ const Policy = () => {
         <section className="container" dir="ltr">
           <h3><strong>Privacy Policy</strong></h3>
           <div>
-            Privacy Policy for dot security At dot security, accessible from
-            https://dotsecurity.dotsolarus.com/, one of our main priorities is
+            Privacy Policy for Lifetime opportunity security At Lifetime opportunity security, one of our main priorities is
             the privacy of our visitors. This Privacy Policy document contains
-            types of information that is collected and recorded by dot security
+            types of information that is collected and recorded by Lifetime opportunity security
             and how we use it.<br /><br /> If you have additional questions or require more
             information about our Privacy Policy, do not hesitate to contact us.
             This Privacy Policy applies only to our online activities and is
             valid for visitors to our website with regards to the information
-            that they shared and/or collect in dot security. This policy is not
+            that they shared and/or collect in Lifetime opportunity security. This policy is not
             applicable to any information collected offline or via channels
             other than this website. Our Privacy Policy was created with the
             help of the Free Privacy Policy Generator. Consent By using our
@@ -40,7 +39,7 @@ const Policy = () => {
             partners, including for customer service, to provide you with
             updates and other information relating to the website, and for
             marketing and promotional purposes Send you emails Find and prevent
-            fraud Log Files dot security follows a standard procedure of using
+            fraud Log Files Lifetime opportunity security follows a standard procedure of using
             log files. These files log visitors when they visit websites. All
             hosting companies do this and a part of hosting services’ analytics.<br /><br />
             The information collected by log files include internet protocol
@@ -51,17 +50,17 @@ const Policy = () => {
             trends, administering the site, tracking users’ movement on the
             website, and gathering demographic information. Advertising Partners
             Privacy Policies You may consult this list to find the Privacy
-            Policy for each of the advertising partners of dot security.
+            Policy for each of the advertising partners of Lifetime opportunity security.
             Third-party ad servers or ad networks uses technologies like
             cookies, JavaScript, or Web Beacons that are used in their
-            respective advertisements and links that appear on dot security,
+            respective advertisements and links that appear on Lifetime opportunity security,
             which are sent directly to users’ browser. They automatically
             receive your IP address when this occurs. These technologies are
             used to measure the effectiveness of their advertising campaigns
             and/or to personalize the advertising content that you see on
-            websites that you visit.<br /><br /> Note that dot security has no access to or
+            websites that you visit.<br /><br /> Note that Lifetime opportunity security has no access to or
             control over these cookies that are used by third-party advertisers.
-            Third Party Privacy Policies dot security’s Privacy Policy does not
+            Third Party Privacy Policies Lifetime opportunity security’s Privacy Policy does not
             apply to other advertisers or websites. Thus, we are advising you to
             consult the respective Privacy Policies of these third-party ad
             servers for more detailed information. It may include their
@@ -100,7 +99,7 @@ const Policy = () => {
             Children’s Information Another part of our priority is adding
             protection for children while using the internet.<br /><br /> We encourage
             parents and guardians to observe, participate in, and/or monitor and
-            guide their online activity. dot security does not knowingly collect
+            guide their online activity. Lifetime opportunity security does not knowingly collect
             any Personal Identifiable Information from children under the age of
             13. If you think that your child provided this kind of information
             on our website, we strongly encourage you to contact us immediately

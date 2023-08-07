@@ -6,7 +6,7 @@ const Refund = () => {
     <>
       <div className={styles.cont}>
         <section className="container" dir="ltr">
-          <strong>Product:</strong> At DotMedia, we are committed to our
+          <strong>Product:</strong> At Lifetime opportunity, we are committed to our
           customers’ satisfaction. If the product did not meet your expectations
           or was defective, you can refer to the following policies to request
           for a refund, exchange or repairment in terms of your situation.
