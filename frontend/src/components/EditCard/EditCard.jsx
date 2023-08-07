@@ -8,6 +8,13 @@ import { NavLink, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import CardSeven from "./Cards/CardSeven/CardSeven";
 import CardTwo from "./Cards/CardTwo/CardTwo";
+import CardThree from "./Cards/CardThree/CardThree";
+import CardFour from "./Cards/CardFour/CardFour";
+import CardFive from "./Cards/CardFive/CardFive";
+import CardSix from "./Cards/CardSix/CardSix";
+import CardEight from "./Cards/CardEight/CardEight";
+import CardTen from "./Cards/CardTen/CardTen";
+import CardOne from "./Cards/CardOne/CardOne";
 
 function EditCard() {
   const { id } = useParams();
@@ -59,6 +66,18 @@ function EditCard() {
     <>
       <div className={styles.all + " container"} dir="ltr">
         <>
+        {id === "1" ? (
+            <CardOne
+              name={name}
+              firstNum={firstNum}
+              secondNum={secondNum}
+              email={email}
+              site={site}
+              location={location}
+            ></CardOne>
+          ) : (
+            ""
+          )}
           {id === "7" ? (
             <CardSeven
               name={name}
@@ -83,12 +102,81 @@ function EditCard() {
           ) : (
             ""
           )}
-
-          {id !== "7" && id !== "1" && id !== "2" ? (
-            <div className={styles.not}>
-              هذه البطاقه غير متوفرة يرجى اختيار بطاقة اخرى
-            </div>
+          {id === "3" ? (
+            <CardThree
+              name={name}
+              firstNum={firstNum}
+              secondNum={secondNum}
+              email={email}
+              site={site}
+              location={location}
+            ></CardThree>
           ) : (
+            ""
+          )}
+          {id === "4" ? (
+            <CardFour
+              name={name}
+              firstNum={firstNum}
+              secondNum={secondNum}
+              email={email}
+              site={site}
+              location={location}
+            ></CardFour>
+          ) : (
+            ""
+          )}
+          {id === "5" ? (
+            <CardFive
+              name={name}
+              firstNum={firstNum}
+              secondNum={secondNum}
+              email={email}
+              site={site}
+              location={location}
+            ></CardFive>
+          ) : (
+            ""
+          )}
+          {id === "6" ? (
+            <CardSix
+              name={name}
+              firstNum={firstNum}
+              secondNum={secondNum}
+              email={email}
+              site={site}
+              location={location}
+            ></CardSix>
+          ) : (
+            ""
+          )}
+          {id === "8" ? (
+            <CardEight
+              name={name}
+              firstNum={firstNum}
+              secondNum={secondNum}
+              email={email}
+              site={site}
+              location={location}
+            ></CardEight>
+          ) : (
+            ""
+          )}
+
+          {id === "10" ? (
+            <CardTen
+              name={name}
+              firstNum={firstNum}
+              secondNum={secondNum}
+              email={email}
+              site={site}
+              location={location}
+            ></CardTen>
+          ) : (
+            ""
+          )}
+
+
             <form dir="rtl" className={styles.formInfo}>
               <div>
                 <label htmlFor="firstNum">الاسم</label>
@@ -171,11 +259,10 @@ function EditCard() {
                 <Button
                   classList={styles.add + " yellow"}
                   text="اضف الى السلة"
-                  onClick={() => addToCart(counter, id)}
+                  onClick={() => {addToCart(counter, id);window.scrollTo(0, 0)}}
                 ></Button>
               </NavLink>
             </form>
-          )}
         </>
       </div>
     </>

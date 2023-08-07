@@ -32,7 +32,7 @@
     width: 400px;
     height: 250px;
     margin: 50px 0;
-    background-image: url(../../../../images/2-1.jpeg);
+    background-image: url(../../../../images/8-1.jpeg);
     color: var(--white);
     font-size: 28px;
     text-transform: uppercase;
@@ -45,11 +45,11 @@
     display: flex;
     gap: 75px;
     font-size: 10px;
-    padding-top: 38px;
+    padding-top: 25px;
   }
   .lower__bot__left{
     display: grid;
-    gap: 8px;
+    gap: 12px;
   }
   .lower__bot__left .location{
     padding-top: 4px;
@@ -72,6 +72,6 @@
     flex-direction: column;
     width: 400px;
     height: 250px;
-    background-image: url(../../../../images/2-2.jpeg);
-    padding: 60px 20px 28px 62px;
+    background-image: url(../../../../images/8-2.jpeg);
+    padding: 47px 20px 28px 54px;
   }

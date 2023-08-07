@@ -6,7 +6,7 @@ const CartContext = createContext();
 export function CartProvider(props) {
   const getDefaultCart = () => {
     let cart = {};
-    for (let i = 1; i < cards.length+1; i++) {
+    for (let i = 1; i < cards.length+2; i++) {
       cart[i] = 0;
     }
     return cart;

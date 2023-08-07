@@ -10,20 +10,13 @@ import card8 from "./images/8.jpeg";
 import card9 from "./images/9.jpeg";
 
 export const cards = [
-    { id: 1, img: card7, category: "اعلام" },
+    { id: 1, img: card7, category: "الأعلام" },
     { id: 7, img: card1, category: "رجال اعمال" },
-    { id: 2, img: card2, category: "طبيب" },
-    { id: 3, img: card3, category: "حداد" },
+    { id: 2, img: card2, category: "الأطباء" },
+    { id: 3, img: card3, category: "المهندسين" },
     { id: 4, img: card4, category: "رجال اعمال" },
-    { id: 5, img: card6, category: "حداد" },
-    { id: 6, img: card9, category: "اعلام" },
-    { id: 8, img: card8, category: "اعلام" },
-    { id: 10, img: card5, category: "نجار" },
-    { id: 11, img: card2, category: "حداد" },
-    { id: 12, img: card5, category: "رجال اعمال" },
-    { id: 13, img: card1, category: "حداد" },
-    { id: 14, img: card1, category: "مهندس" },
-    { id: 15, img: card4, category: "نجار" },
-    { id: 11, img: card2, category: "مهندس" },
-
+    { id: 5, img: card6, category: "أعمال حرفية" },
+    { id: 6, img: card9, category: "الأعلام" },
+    { id: 8, img: card8, category: "الأعلام" },
+    { id: 10, img: card5, category: "أعمال حرفية" },
   ];

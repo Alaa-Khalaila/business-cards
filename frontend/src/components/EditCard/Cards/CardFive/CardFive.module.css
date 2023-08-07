@@ -8,6 +8,7 @@
     min-width: 400px;
     max-height: 250px;
     margin: 50px 0;
+    border: 1px solid silver;
   }
   .upper img {
     width: 100%;
@@ -32,29 +33,30 @@
     width: 400px;
     height: 250px;
     margin: 50px 0;
-    background-image: url(../../../../images/2-1.jpeg);
-    color: var(--white);
-    font-size: 28px;
+    background-image: url(../../../../images/5-1.jpeg);
+    font-size: 32px;
     text-transform: uppercase;
+    font-weight: 800;
   }
-
-  .upper div {
-    padding-top: 60px
-  }
+  
   .lower__bot {
     display: flex;
     gap: 75px;
+    justify-content: center;
     font-size: 10px;
-    padding-top: 38px;
+    padding-top: 15px;
   }
-  .lower__bot__left{
-    display: grid;
-    gap: 8px;
-  }
-  .lower__bot__left .location{
+  .lower__bot__left {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .lower__bot__left .location {
     padding-top: 4px;
   }
-  .lower__bot__left div{
+  .lower__bot__left div {
     min-height: 12px;
   }
   .lower h4 {
@@ -72,6 +74,11 @@
     flex-direction: column;
     width: 400px;
     height: 250px;
-    background-image: url(../../../../images/2-2.jpeg);
-    padding: 60px 20px 28px 62px;
+    background-image: url(../../../../images/5-2.jpeg);
+    padding-top: 70px;
+  }
+  
+  .name{
+    text-transform: uppercase;
+    font-size: 26px;
   }

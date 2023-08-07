@@ -32,7 +32,7 @@
     width: 400px;
     height: 250px;
     margin: 50px 0;
-    background-image: url(../../../../images/2-1.jpeg);
+    background-image: url(../../../../images/10-1.jpeg);
     color: var(--white);
     font-size: 28px;
     text-transform: uppercase;
@@ -42,14 +42,23 @@
     padding-top: 60px
   }
   .lower__bot {
-    display: flex;
-    gap: 75px;
-    font-size: 10px;
-    padding-top: 38px;
+    padding-top: 28px;
+    font-size: 12px;
+    max-width: 132px;
+    font-weight: 600;
   }
   .lower__bot__left{
     display: grid;
-    gap: 8px;
+    gap: 12px;
+  }
+  .left__name{
+    color: var(--white);
+    align-self: center;
+    font-size: 13px;
+    padding:0 24px 14px 0;
+    text-align: center;
+    min-width: 120px;
+    text-transform: uppercase;
   }
   .lower__bot__left .location{
     padding-top: 4px;
@@ -58,10 +67,11 @@
     min-height: 12px;
   }
   .lower h4 {
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
     font-family: "Bitter", serif !important;
     margin-left: -30px;
+    max-width: 175px;
   }
   .upper div {
     font-family: "Bitter", serif !important;
@@ -69,9 +79,10 @@
   
   .lower {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 400px;
     height: 250px;
-    background-image: url(../../../../images/2-2.jpeg);
-    padding: 60px 20px 28px 62px;
+    background-image: url(../../../../images/10-2.jpeg);
+    padding: 50px  20px 28px 52px;
   }

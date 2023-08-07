@@ -1,10 +1,11 @@
-import styles from "./CardOne.module.css";
+import styles from "./CardFour.module.css";
 
-const CardOne = (props) => {
+const CardFour = (props) => {
   return (
     <>
       <div className={styles.card} dir="ltr">
         <div className={styles.upper}>
+          <div>{props.name}</div>
         </div>
         <div className={styles.lower}>
           <div>
@@ -22,6 +23,7 @@ const CardOne = (props) => {
               </div>
               <div className={styles.location}>{props.location}</div>
             </div>
+            <div className={styles.left__name}>{props.name}</div>
           </div>
         </div>
       </div>
@@ -29,4 +31,4 @@ const CardOne = (props) => {
   );
 };
 
-export default CardOne;
+export default CardFour;

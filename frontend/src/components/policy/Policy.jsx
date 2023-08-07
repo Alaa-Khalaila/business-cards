@@ -1,6 +1,7 @@
 import styles from "./Policy.module.css"
 
 const Policy = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       {" "}

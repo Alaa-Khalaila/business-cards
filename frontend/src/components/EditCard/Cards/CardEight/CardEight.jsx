@@ -1,6 +1,6 @@
-import styles from "./CardOne.module.css";
+import styles from "./CardEight.module.css";
 
-const CardOne = (props) => {
+const CardEight = (props) => {
   return (
     <>
       <div className={styles.card} dir="ltr">
@@ -29,4 +29,4 @@ const CardOne = (props) => {
   );
 };
 
-export default CardOne;
+export default CardEight;

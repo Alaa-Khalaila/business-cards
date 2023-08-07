@@ -45,23 +45,23 @@ function Navbar() {
           <div className="left">
             <ul className={Nav.list}>
               <li>
-                <NavLink to="/" className={Nav.home} href="">
+                <NavLink to="/" onClick={() => setToggleNav(false)} className={Nav.home} href="">
                   {tranlate("Nav.Home")}
                 </NavLink>
               </li>
 
               <li>
                 {/* <a href="#about">{tranlate("Nav.about")}</a> */}
-                <NavLink to="/about">{tranlate("Nav.about")}</NavLink>
+                <NavLink onClick={() => setToggleNav(false)} to="/about">{tranlate("Nav.about")}</NavLink>
               </li>
 
               <li>
-                <NavLink to="/">{tranlate("Nav.cards")}</NavLink>
+                <NavLink onClick={() => setToggleNav(false)} to="/">{tranlate("Nav.cards")}</NavLink>
               </li>
 
               <li>
                 <li>
-                  <NavLink to="/contact">{tranlate("Nav.contact")}</NavLink>
+                  <NavLink onClick={() => setToggleNav(false)} to="/contact">{tranlate("Nav.contact")}</NavLink>
                 </li>
               </li>
             </ul>
@@ -77,7 +77,7 @@ function Navbar() {
             ) : (
               ""
             )}
-            <NavLink to="/cart" className={Nav.icon}>
+            <NavLink  to="/cart"  onClick={() => setToggleNav(false)} className={Nav.icon}>
               {items ? <span className={Nav.cart}>{items}</span> : ""}
               <i class="fa fa-cart-plus"></i>
             </NavLink>
