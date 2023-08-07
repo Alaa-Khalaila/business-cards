@@ -34,7 +34,7 @@ export const Footer = () => {
               </a>
               <p>{translate("Footer.text")}</p>
               <div className={style.social_icon}>
-                <a href="">
+                {/* <a href="">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
                 <a href="">
@@ -48,7 +48,7 @@ export const Footer = () => {
                 </a>
                 <a>
                   <i class="fa fa-pinterest" aria-hidden="true"></i>
-                </a>
+                </a> */}
               </div>
               <div className={style.footer_copyright}>
                 <p> &copy; {translate("Footer.copyRight-1")}</p>
