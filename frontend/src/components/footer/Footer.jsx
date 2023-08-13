@@ -24,7 +24,7 @@ export const Footer = () => {
                 </a>
                 <a href="mailto:email@email.de">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span>Info@petraoutsourcing.com</span>
+                  <span>Sam.samsunge@icloud.com</span>
                 </a>
               </div>
             </div>
